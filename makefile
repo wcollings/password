@@ -5,5 +5,5 @@ passwords: generator.cpp help.cpp longform.cpp
 	g++ help.cpp -o help
 	g++ longform.cpp -o long
 	g++ random.cpp -o rand
-	echo "hello" | sudo -S cp pw /usr/bin
+	sudo cp pw /usr/bin
 	echo "done"
