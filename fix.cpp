@@ -22,23 +22,29 @@ struct site
 };
 vector<site> info;
 
-void read_in(); //reads in the first password file
-void checker(); //reads in second password file to compare against
+void read_in(string file1); //reads in the first password file
+void checker(string file); //reads in second password file to compare against
 bool already_exists(site& to_check); //checks if the current uname/password was already in the other file
 void print();
 
 int main()
 {
-	read_in();
-	checker();
+	string file1, file2;
+	ifstream in;
+	in.open("settings.txt");
+	in >>file1 >>file2;
+	in.close();
+	read_in(file1);
+	checker(file2);
 	print();
 
 }
 
-void read_in()
+void read_in(string file1)
 {
 	ifstream in;
-	in.open("passwords.txt");
+	string file1,file2;
+	in.open(file1.c_str());
 	site temp;
 	while (in)
 	{
@@ -50,10 +56,10 @@ void read_in()
 	in.close();
 }
 
-void checker()
+void checker(string file2)
 {
 	ifstream in;
-	in.open("/home/wmc/Dropbox/passwords.txt");
+	in.open(file2.c_str());
 	site temp;
 	int counter;
 	while (in)
