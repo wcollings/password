@@ -1,9 +1,11 @@
-flags = -o passwords --std=c++11
+flags=-fpermissive -fmessage-length=50 -std=c++11
 
-passwords: generator.cpp help.cpp longform.cpp
-	g++ generator.cpp $(flags) -o short --std=c++11
-	g++ help.cpp -o help
-	g++ longform.cpp -o long
-	g++ random.cpp -o rand
-	echo "hello" | sudo -S cp pw /usr/bin
-	echo "done"
+pw:main.o
+
+main.o:main.cpp utilities.o
+	g++ main.cpp $(flags) -o pw
+
+utilities.o: utilities.cpp algorithms.cpp site.h
+	g++ site.h
+	g++ utilities.cpp $(flags) -c
+	g++ algorithms.cpp $(flags) -c
