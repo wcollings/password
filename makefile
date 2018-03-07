@@ -1,9 +1,14 @@
-flags = -o passwords --std=c++11
+FLAGS=-std=c++11 -fpermissive -fmessage-length=50
 
-passwords: generator.cpp help.cpp longform.cpp
-	g++ generator.cpp $(flags) -o short --std=c++11
-	g++ help.cpp -o help
-	g++ longform.cpp -o long
-	g++ random.cpp -o rand
-	sudo cp pw /usr/bin
-	echo "done"
+all: utility algorithm main.cpp
+	g++ main.cpp -o pw-gen $(FLAGS)
+
+utility: utilities.cpp 
+	g++ utilities.cpp -c $(FLAGS)
+
+algorithm: algorithms.cpp
+	g++ algorithms.cpp -c $(FLAGS)
+
+install:
+	cp pw-gen /usr/local/bin
+	

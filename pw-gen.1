@@ -1,0 +1,56 @@
+.TH pw-gen 1 "03-01-2018" "version 0.1.1"
+.SH NAME
+pw-gen: a simple password generator and searchable database
+.SH SYNOPSIS
+.B pw-gen -p
+.PP
+.B pw-gen -f [
+.I sitename
+.B ]
+.PP
+.B pw-gen -l [
+.I options
+.B ]
+.PP
+.B pw-gen -s [
+.I options
+.B ]
+.PP
+.B pw-gen -r [
+.I size
+.B ] [
+.I options
+.B ]
+.SH DESCRIPTION
+This program is a simple password manager, it manages a database of passwords and allows you to enter and view entries (as you'd expect).
+.SH OPTIONS
+.B -p
+: prints all the entries of the database
+.PP
+.B -f [
+.I sitename
+.B ]
+: calls up information on the site you entered. If there's nothing in the database, it will report that back as well
+.PP
+.B -l
+: generates a long password: 3 random words strung together with a dash in between them, and prints it to stdout and saves it. taken from the default word list included, but the dictionary file can be changed in the settings file
+
+.B -s
+: generates a "short" password (8-9 characters), using my custom
+algorithm
+
+.B -r [
+.I length
+.B ]
+: generates a random series of valid characters of length
+.I length
+The default "illegal character" list is saved in the settings file, but it can be overridden using the i flag
+.PP
+.B -i [
+.I string
+.B ]
+: overrides the default "illegal character" list, using 
+.I string
+instead. 
+
+

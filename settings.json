@@ -1,0 +1,7 @@
+{
+    "verbose":false,
+    "save_file": "test.json",
+    "illegals": "!@#~<>\\",
+    "default_length": 10,
+	 "words_file": "words.txt"
+}
