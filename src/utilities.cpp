@@ -12,17 +12,18 @@
 using namespace std;
 using json= nlohmann::json;
 
-inline bool exists(string toFind);
+inline bool exists(std::string);
 inline bool readIn();
-inline int convertToNumber(char c);
+inline int convertToNumber(char);
 inline void Find(std::string);
 inline void help();
 inline void write();
 inline void logNewEntry(site);
 inline void print(json::iterator);
 inline void print(site);
+inline void logMessages(int);
 
-
+ofstream systemLog;
 inline bool exists(string toFind)
 {
 	auto find=record.find(toFind);
@@ -41,19 +42,17 @@ inline bool readIn()
 	in.open("settings.json");
 	if (in)
 	{
-		//cout <<"I opened settings\n";
 		in >>settings;
 		in.close();
 		in.open(settings.at("save_file").get<std::string>());
 		if (in)
 		{
-			//cout <<"I opened the file!\n";
 			in >>record;
 		}
-		else cout <<"The database file doesn't exist or is formatted wrong\n";
+		else logMessages(-2);
 		return true;
 	}
-	else cout <<"couldn't find the settings file. quitting\n";
+	else logMessages(-1);
 	return false;
 }
 
@@ -61,8 +60,7 @@ inline int convertToNumber(char c)
 {
 	char temp=toupper(c);
 	int num=(static_cast<int>(temp))-64;
-	cout <<num <<endl;
-       return num;	
+   return num;	
 }
 
 inline void Find(string a)
@@ -105,6 +103,7 @@ inline void write()
 	ofstream out;
 	out.open(settings.at("save_file").get<std::string>());
 	out <<record.dump(3);
+	logMessages(2);
 	out.close();
 }
 
@@ -119,4 +118,27 @@ inline void logNewEntry(site s)
 	if (s.notes != "")
 		j+=json::parse(s.notes);
 	record[s.website]=j;
+}
+
+inline void logMessages(int code)
+{
+	time_t t=time(0);
+	struct tm * now = localtime(&t);
+	std::string time_str=asctime(now);
+	systemLog <<'[' <<time_str.substr(0, time_str.size()-1) <<"] ";
+	switch (code)
+	{
+		case -1:	systemLog <<"Settings file could not be located. Aborting";
+			break;
+		case -2: systemLog <<"Database file could not be read. Aborting";
+			break;
+		case 0: systemLog <<"Program initialized";
+			break;
+		case 1: systemLog <<"generated new password";
+			break;
+		case 2: systemLog <<"Database updated sucessfully";
+			break;
+		default: systemLog <<"unknown error occurred";
+	}
+	systemLog <<'\n';
 }

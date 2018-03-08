@@ -2,48 +2,43 @@
 .SH NAME
 pw-gen: a simple password generator and searchable database
 .SH SYNOPSIS
-.B pw-gen -p
-.PP
 .B pw-gen -f [
 .I sitename
 .B ]
 .PP
-.B pw-gen -l [
+.B pw-gen -L [
 .I options
 .B ]
 .PP
-.B pw-gen -s [
+.B pw-gen -S [
 .I options
 .B ]
 .PP
-.B pw-gen -r [
-.I size
-.B ] [
+.B pw-gen -R [
 .I options
 .B ]
 .SH DESCRIPTION
-This program is a simple password manager, it manages a database of passwords and allows you to enter and view entries (as you'd expect).
+This program is a simple password manager, it manages a database of passwords and allows you to enter and view entries 
+(as you'd expect).
 .SH OPTIONS
-.B -p
-: prints all the entries of the database
 .PP
 .B -f [
 .I sitename
 .B ]
 : calls up information on the site you entered. If there's nothing in the database, it will report that back as well
 .PP
-.B -l
-: generates a long password: 3 random words strung together with a dash in between them, and prints it to stdout and saves it. taken from the default word list included, but the dictionary file can be changed in the settings file
+.B -L
+: generates a long password: 3 random words strung together with a dash in between them, and prints it to stdout and 
+saves it. Taken from the default word list included, but the dictionary file can be changed in the settings file
 
-.B -s
+.B -S
 : generates a "short" password (8-9 characters), using my custom
 algorithm
 
-.B -r [
+.B -R [
 .I length
 .B ]
-: generates a random series of valid characters of length
-.I length
+: generates a random series of valid characters of default length 10
 The default "illegal character" list is saved in the settings file, but it can be overridden using the i flag
 .PP
 .B -i [
@@ -51,6 +46,26 @@ The default "illegal character" list is saved in the settings file, but it can b
 .B ]
 : overrides the default "illegal character" list, using 
 .I string
-instead. 
-
-
+instead.
+.PP
+.B -l [
+.I size
+.B ]
+: overrides the default size of the random password, and
+sets it to 
+.I size
+instead.
+.PP
+.B -e [
+.I email
+.B ]
+: record the provided
+.I email
+in a field in the database
+.PP
+.B -u [
+.I username
+.B ]
+: records the provided
+.I username
+in a field in the database

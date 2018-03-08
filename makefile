@@ -6,10 +6,16 @@ all:
 
 install:
 	$(eval PREV_USR=`who -a | gawk 'FNR > 1 { print $$$$1;}'`)
-	cp pw-gen /usr/local/bin
+	cp src/pw-gen /usr/local/bin
 	@[ -d /usr/local/etc/pw-gen ] || mkdir /usr/local/etc/pw-gen
 	@[ -d /home/$(PREV_USR)/.pw-gen ] || mkdir /home/$(PREV_USR)/.pw-gen
 	sed -i -e "s/db_temp/\/home\/$(PREV_USR)\/.pw-gen\/db.json/g" settings.json
 	cp settings.json /usr/local/etc/pw-gen
 	cp db.json /home/$(PREV_USR)/.pw-gen
 	cp words.txt /usr/local/etc/pw-gen
+	touch /var/log/pw-gen.log
+	chmod 7 /var/log/pw-gen.log
+	gzip -k pw-gen.1
+	cp pw-gen.1.gz /usr/local/share/man/man1
+	mandb
+	

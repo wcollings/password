@@ -11,6 +11,8 @@ void create_password(site, selector);
 
 int main(int argc, char * argv[])
 {
+	systemLog.open("/var/log/pw-gen.log", std::ofstream::app);
+	logMessages(0);
 	site temp;
 	if (!readIn()) return -1;
 	temp.illegal=settings.at("illegal").get<std::string>();
@@ -55,12 +57,6 @@ int main(int argc, char * argv[])
 					//read in notes. will have to be a prompt
 				}
 					break;
-				case 'p':
-				{
-					//print the database
-					//for (auto i=record.begin(); i != record.end(); ++i)
-				}
-					break;
 				case 'f':
 				{
 					exists(argv[++i]);
@@ -86,12 +82,14 @@ int main(int argc, char * argv[])
 	if (generate)
 		create_password(temp, flag);
 	write();
+	systemLog.close();
 }
 
 void create_password(site temp, selector flag)
 {
 	if (!exists(temp.website))
 	{
+		logMessages(1);
 		switch (flag)
 		{
 			case Short: shortpw(temp);
