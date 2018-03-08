@@ -3,7 +3,7 @@
 //has all the misc. functions.
 //exists, readIn
 
-#include "../include/site.hpp"
+#include "include/site.hpp"
 #include <algorithm>
 #include <iostream>
 #include <fstream>
@@ -12,16 +12,18 @@
 using namespace std;
 using json= nlohmann::json;
 
-bool exists(string toFind);
-bool readIn();
-int convertToNumber(char c);
-void Find(std::string);
-void help();
-void write();
-void logNewEntry(site);
+inline bool exists(string toFind);
+inline bool readIn();
+inline int convertToNumber(char c);
+inline void Find(std::string);
+inline void help();
+inline void write();
+inline void logNewEntry(site);
+inline void print(json::iterator);
+inline void print(site);
 
 
-bool exists(string toFind)
+inline bool exists(string toFind)
 {
 	auto find=record.find(toFind);
 	if (find!= record.end())
@@ -33,10 +35,10 @@ bool exists(string toFind)
 	return false;
 }
 
-bool readIn()
+inline bool readIn()
 {
 	ifstream in;
-	in.open("settings.json");
+	in.open("/usr/local/etc/pw-gen/settings.json");
 	if (in)
 	{
 		//cout <<"I opened settings\n";
@@ -55,7 +57,7 @@ bool readIn()
 	return false;
 }
 
-int convertToNumber(char c)
+inline int convertToNumber(char c)
 {
 	char temp=toupper(c);
 	int num=(static_cast<int>(temp))-64;
@@ -63,7 +65,7 @@ int convertToNumber(char c)
        return num;	
 }
 
-void Find(string a)
+inline void Find(string a)
 {
 	auto find=record.find(a);
 	if (find != record.end())
@@ -72,7 +74,7 @@ void Find(string a)
 	}
 }
 
-void print(json::iterator a)
+inline void print(json::iterator a)
 {
 	cout <<"data for site \"" <<a.key() <<"\":\n";
 	json j=a.value();
@@ -80,16 +82,16 @@ void print(json::iterator a)
 		cout <<'\t' <<i.key() <<':' <<i.value().dump(3) <<'\n';
 }
 
-void print(site s)
+inline void print(site s)
 {
-	cout <<"data for site \"" <<site.website <<"\":\n";
+	cout <<"data for site \"" <<s.website <<"\":\n";
 	if (s.email != "") cout <<'\t' <<"email: " <<s.email <<'\n';
 	cout <<'\t' <<"password: " <<s.password <<'\n';
 	if (s.uname != "") cout <<'\t' <<"username:" <<s.uname <<'\n';
 }
 
 
-void help()
+inline void help()
 {
 	cout <<"summary of arguments:\n"
 		  <<"\t-p: print all entries\n"
@@ -98,7 +100,7 @@ void help()
 		  <<"\t-r: generate a random series of characters. must specify a length as well\n";
 }
 
-void write()
+inline void write()
 {
 	ofstream out;
 	out.open(settings.at("save_file").get<std::string>());
@@ -106,7 +108,7 @@ void write()
 	out.close();
 }
 
-void logNewEntry(site s)
+inline void logNewEntry(site s)
 {
 	json j;
 	j["password"]=s.password;

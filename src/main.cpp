@@ -2,7 +2,7 @@
 //has the main function, and that's it
 
 #include <string>
-#include "../include/site.hpp"
+#include "include/site.hpp"
 #include "algorithms.cpp"
 using namespace std;
 

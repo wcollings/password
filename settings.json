@@ -1,7 +1,7 @@
 {
     "verbose":false,
-    "save_file": "db.json",
+    "save_file": "/home/wmc/.pw-gen/db.json",
     "illegal": "!@#~<>\\",
     "default_length": 10,
-	 "words_file": "words.txt"
+	 "words_file": "/usr/local/etc/pw-gen/words.txt"
 }

@@ -1,7 +1,7 @@
 //ALGORITHMS
 //has the algorithms for actually making the passwords
 
-#include "../include/site.hpp"
+#include "include/site.hpp"
 #include "utilities.cpp"
 #include <iostream>
 #include <cstdlib>

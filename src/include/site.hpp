@@ -12,7 +12,7 @@ struct site{
 	std::string uname, website, notes, illegal, password, email;
 	int length;
 	site();
-}temp;
+};
 
 site::site()
 {
