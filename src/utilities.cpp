@@ -38,7 +38,7 @@ inline bool exists(string toFind)
 inline bool readIn()
 {
 	ifstream in;
-	in.open("/usr/local/etc/pw-gen/settings.json");
+	in.open("settings.json");
 	if (in)
 	{
 		//cout <<"I opened settings\n";
