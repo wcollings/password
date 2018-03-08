@@ -1,5 +1,0 @@
-# master backup file - just in case
-passwords.txt
-
-#mobile file - put it on a network somewhere, so you can check the file anywhere. I use dropbox for that
-~/Dropbox/passwords.txt

@@ -1,0 +1,5 @@
+*.o
+*.hpp.gch
+pw-gen
+*.txt
+db.json
