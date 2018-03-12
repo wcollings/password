@@ -5,4 +5,4 @@ pw-gen
 db.json
 src/include/json.hpp
 pw-gen.1.gz
-.vscode
+.vscode/*
