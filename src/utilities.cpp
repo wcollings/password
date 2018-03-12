@@ -1,7 +1,6 @@
 //UTILITIES
 //
-//has all the misc. functions.
-//exists, readIn
+//has all the misc. functions
 
 #include "include/site.hpp"
 #include <algorithm>
