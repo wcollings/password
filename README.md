@@ -1,1 +1,2 @@
-# password generator. Written in BASH/C++
+# password generator. Written in C++
+complete password generator/database manager

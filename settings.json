@@ -1,0 +1,7 @@
+{
+    "verbose":false,
+    "save_file": "db_temp",
+    "illegal": "!@#~<>\\",
+    "default_length": 10,
+	 "words_file": "/usr/local/etc/pw-gen/words.txt"
+}
