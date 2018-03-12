@@ -1,3 +1,4 @@
+
 all:
 	sed -i -e 's/settings.json/\/usr\/local\/etc\/pw-gen\/settings.json/g' src/utilities.cpp
 	@[ -e src/include/json.hpp ] || wget -NO src/include/json.hpp https://raw.githubusercontent.com/nlohmann/json/develop/single_include/nlohmann/json.hpp
@@ -18,4 +19,3 @@ install:
 	gzip -k pw-gen.1
 	cp pw-gen.1.gz /usr/local/share/man/man1
 	mandb
-	
