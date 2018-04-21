@@ -1,3 +1,4 @@
+//copyright 2018 William Collings
 //ALGORITHMS
 //has the algorithms for actually making the passwords
 

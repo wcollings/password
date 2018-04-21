@@ -1,3 +1,4 @@
+//copyright 2018 William Collings
 //MAIN
 //has the main function, and that's it
 

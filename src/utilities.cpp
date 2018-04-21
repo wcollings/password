@@ -1,3 +1,4 @@
+//copyright 2018 William Collings
 //UTILITIES
 //
 //has all the misc. functions.
