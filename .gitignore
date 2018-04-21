@@ -1,8 +1,8 @@
 *.o
 *.hpp.gch
 pw-gen
-*.txt
 db.json
 src/include/json.hpp
 pw-gen.1.gz
 .vscode/*
+src/tags
