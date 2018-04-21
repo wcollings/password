@@ -1,3 +1,4 @@
+//copyright 2018 William Collings
 #include <string>
 #include <vector>
 #include "json.hpp"

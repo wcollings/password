@@ -1,3 +1,4 @@
+//Copyright 2018 William Collings
 //ALGORITHMS
 //has the algorithms for actually making the passwords
 
@@ -62,9 +63,9 @@ void shortpw(site info)
 	if (now->tm_mday+1 < 10)
 	{
 		pw+="0";
-		pw+=to_string(now->tm_mday+1);	
+		pw+=to_string(now->tm_mday);	
 	}
-	else pw+=to_string(now->tm_mday+1);
+	else pw+=to_string(now->tm_mday);
 	try
 	{
 		if (info.website.size() < 3)

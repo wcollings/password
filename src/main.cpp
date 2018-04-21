@@ -1,3 +1,4 @@
+//copyright 2018 William Collings
 //MAIN
 //has the main function, and that's it
 
@@ -12,7 +13,12 @@ void create_password(site, selector);
 int main(int argc, char * argv[])
 {
 	systemLog.open("/var/log/pw-gen.log", std::ofstream::app);
-	logMessages(0);
+	if (!systemLog)
+	{
+		cout <<"error: could not initialize log file\n";
+		logMessages(-1);
+		return returnCode;
+	}
 	site temp;
 	if (!readIn()) return -1;
 	temp.illegal=settings.at("illegal").get<std::string>();
@@ -24,6 +30,7 @@ int main(int argc, char * argv[])
 		help();
 		return 0;
 	}
+	
 	for (int i=1; i < argc; ++i)
 	{
 	 	if (argv[i][0]=='-')
@@ -76,18 +83,34 @@ int main(int argc, char * argv[])
 					temp.email=argv[++i];
 			}
 		else temp.website=argv[i];
-		//cout <<i <<'=' <<argv[i] <<'\n';
 	}
-	//cout <<temp.website <<'\n';
 	if (generate)
 		create_password(temp, flag);
 	write();
 	systemLog.close();
+	return returnCode;
 }
 
 void create_password(site temp, selector flag)
 {
-	if (!exists(temp.website))
+	if (exists(temp.website))
+	{
+		int sel;
+		cout <<"A record for that site already exists. please select:\n"
+			  <<"\t1: update the information for that site\n"
+			  <<"\t2: create a new entry for this website\n"
+			  <<"\t3: to quit\n";
+		cin >>sel;
+		if (sel == 1)
+		{
+					
+		}
+		else
+		{
+			return;		
+		}
+	}
+	else
 	{
 		logMessages(1);
 		switch (flag)
@@ -99,5 +122,26 @@ void create_password(site temp, selector flag)
 			case Rand: randpw(temp); 
 		}
 	}
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

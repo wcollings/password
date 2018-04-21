@@ -1,3 +1,4 @@
+//Copyright 2018 William Collings
 //UTILITIES
 //
 //has all the misc. functions
@@ -7,10 +8,11 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <sysexits.h>
 
 using namespace std;
 using json= nlohmann::json;
-
+int returnCode=0;
 inline bool exists(std::string);
 inline bool readIn();
 inline int convertToNumber(char);
@@ -127,15 +129,17 @@ inline void logMessages(int code)
 	systemLog <<'[' <<time_str.substr(0, time_str.size()-1) <<"] ";
 	switch (code)
 	{
-		case -1:	systemLog <<"Settings file could not be located. Aborting";
+		case -1:
+		{
+			systemLog <<"Settings file could not be located. Aborting";
+			returnCode=EX_SOFTWARE;	
+		}
 			break;
-		case -2: systemLog <<"Database file could not be read. Aborting";
-			break;
-		case 0: systemLog <<"Program initialized";
-			break;
-		case 1: systemLog <<"generated new password";
-			break;
-		case 2: systemLog <<"Database updated sucessfully";
+		case -2:
+		{
+			systemLog <<"Database file could not be read. Aborting";
+			returnCode=EX_DATAERR;	
+		}
 			break;
 		default: systemLog <<"unknown error occurred";
 	}

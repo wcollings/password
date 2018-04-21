@@ -1,0 +1,876 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/5010e849/
+AllocatorTraits	include/json.hpp	/^        using AllocatorTraits = std::allocator_traits<AllocatorType<T>>;$/;"	t	function:nlohmann::basic_json::create	typeref:typename:std::allocator_traits<AllocatorType<T>>
+BasicJsonType	include/json.hpp	/^    friend BasicJsonType;$/;"	m	class:nlohmann::detail::iter_impl
+CompatibleLimits	include/json.hpp	/^    using CompatibleLimits = std::numeric_limits<CompatibleNumberIntegerType>;$/;"	t	struct:nlohmann::detail::is_compatible_integer_type_impl	typeref:typename:std::numeric_limits<CompatibleNumberIntegerType>
+DEPS	makefile	/^DEPS=include\/site.hpp include\/json.hpp$/;"	m
+FLAGS	makefile	/^FLAGS=-std=c++11 -fpermissive -fmessage-length=50 -w$/;"	m
+Find	utilities.cpp	/^inline void Find(string a)$/;"	f	typeref:typename:void
+JSON_CATCH	include/json.hpp	/^    #define JSON_CATCH /;"	d
+JSON_CATCH	include/json.hpp	/^    #define JSON_CATCH(/;"	d
+JSON_DEPRECATED	include/json.hpp	/^    #define JSON_DEPRECATED /;"	d
+JSON_DEPRECATED	include/json.hpp	/^    #define JSON_DEPRECATED$/;"	d
+JSON_HAS_CPP_14	include/json.hpp	/^    #define JSON_HAS_CPP_14$/;"	d
+JSON_HAS_CPP_17	include/json.hpp	/^    #define JSON_HAS_CPP_17$/;"	d
+JSON_LIKELY	include/json.hpp	/^    #define JSON_LIKELY(/;"	d
+JSON_THROW	include/json.hpp	/^    #define JSON_THROW /;"	d
+JSON_THROW	include/json.hpp	/^    #define JSON_THROW(/;"	d
+JSON_TRY	include/json.hpp	/^    #define JSON_TRY /;"	d
+JSON_UNLIKELY	include/json.hpp	/^    #define JSON_UNLIKELY(/;"	d
+Long	main.cpp	/^enum selector:int{Short=0, Long=1, Rand=2};$/;"	e	enum:selector	file:
+NLOHMANN_BASIC_JSON_TPL	include/json.hpp	/^#define NLOHMANN_BASIC_JSON_TPL /;"	d
+NLOHMANN_BASIC_JSON_TPL_DECLARATION	include/json.hpp	/^#define NLOHMANN_BASIC_JSON_TPL_DECLARATION /;"	d
+NLOHMANN_JSON_FWD_HPP	include/json.hpp	/^#define NLOHMANN_JSON_FWD_HPP$/;"	d
+NLOHMANN_JSON_HAS_HELPER	include/json.hpp	/^#define NLOHMANN_JSON_HAS_HELPER(/;"	d
+NLOHMANN_JSON_HPP	include/json.hpp	/^#define NLOHMANN_JSON_HPP$/;"	d
+NLOHMANN_JSON_VERSION_MAJOR	include/json.hpp	/^#define NLOHMANN_JSON_VERSION_MAJOR /;"	d
+NLOHMANN_JSON_VERSION_MINOR	include/json.hpp	/^#define NLOHMANN_JSON_VERSION_MINOR /;"	d
+NLOHMANN_JSON_VERSION_PATCH	include/json.hpp	/^#define NLOHMANN_JSON_VERSION_PATCH /;"	d
+Rand	main.cpp	/^enum selector:int{Short=0, Long=1, Rand=2};$/;"	e	enum:selector	file:
+RealLimits	include/json.hpp	/^    using RealLimits = std::numeric_limits<RealIntegerType>;$/;"	t	struct:nlohmann::detail::is_compatible_integer_type_impl	typeref:typename:std::numeric_limits<RealIntegerType>
+Short	main.cpp	/^enum selector:int{Short=0, Long=1, Rand=2};$/;"	e	enum:selector	file:
+UTF8_ACCEPT	include/json.hpp	/^    static constexpr uint8_t UTF8_ACCEPT = 0;$/;"	m	class:nlohmann::detail::serializer	typeref:typename:uint8_t
+UTF8_REJECT	include/json.hpp	/^    static constexpr uint8_t UTF8_REJECT = 1;$/;"	m	class:nlohmann::detail::serializer	typeref:typename:uint8_t
+__SITE_H_	include/site.hpp	/^#define __SITE_H_$/;"	d
+__anon332590a80102	include/json.hpp	/^    {$/;"	f	function:nlohmann::detail::from_json	file:
+__anon332590a80202	include/json.hpp	/^    {$/;"	f	function:nlohmann::detail::from_json_array_impl	file:
+__anon332590a80302	include/json.hpp	/^    {$/;"	f	function:nlohmann::detail::from_json_array_impl	file:
+__anon332590a80402	include/json.hpp	/^    {$/;"	f	function:nlohmann::detail::from_json	file:
+__anon332590a80510	include/json.hpp	/^{$/;"	n	namespace:nlohmann
+__anon332590a80610	include/json.hpp	/^{$/;"	n	namespace:nlohmann
+__anon332590a80702	include/json.hpp	/^        {$/;"	f	function:nlohmann::detail::input_adapter::input_adapter	file:
+__anon332590a80802	include/json.hpp	/^        {$/;"	f	function:nlohmann::detail::binary_reader::get_string	file:
+__anon332590a80902	include/json.hpp	/^        {$/;"	f	function:nlohmann::detail::binary_reader::get_cbor_array	file:
+__anon332590a80a02	include/json.hpp	/^        {$/;"	f	function:nlohmann::detail::binary_reader::get_cbor_object	file:
+__anon332590a80b02	include/json.hpp	/^        {$/;"	f	function:nlohmann::detail::binary_reader::get_msgpack_array	file:
+__anon332590a80c02	include/json.hpp	/^        {$/;"	f	function:nlohmann::detail::binary_reader::get_msgpack_object	file:
+__anon332590a80d02	include/json.hpp	/^                    {$/;"	f	function:nlohmann::detail::binary_reader::get_ubjson_array	file:
+__anon332590a80e02	include/json.hpp	/^                {$/;"	f	function:nlohmann::detail::binary_reader::get_ubjson_array	file:
+__anon332590a80f02	include/json.hpp	/^                {$/;"	f	function:nlohmann::detail::binary_reader::get_ubjson_object	file:
+__anon332590a81002	include/json.hpp	/^                {$/;"	f	function:nlohmann::detail::binary_reader::get_ubjson_object	file:
+__anon332590a81102	include/json.hpp	/^                    {$/;"	f	function:nlohmann::detail::binary_writer::write_ubjson	file:
+__anon332590a81202	include/json.hpp	/^                    {$/;"	f	function:nlohmann::detail::binary_writer::write_ubjson	file:
+__anon332590a81302	include/json.hpp	/^        {$/;"	f	function:nlohmann::detail::serializer::dump_float	file:
+__anon332590a81402	include/json.hpp	/^        {$/;"	f	function:nlohmann::json_pointer::to_string	file:
+__anon332590a81502	include/json.hpp	/^                {$/;"	f	function:nlohmann::json_pointer::get_unchecked	file:
+__anon332590a81602	include/json.hpp	/^        {$/;"	f	function:nlohmann::basic_json::create	file:
+__anon332590a81702	include/json.hpp	/^        {$/;"	f	function:nlohmann::basic_json::basic_json	file:
+__anon332590a81802	include/json.hpp	/^            {$/;"	f	function:nlohmann::basic_json::basic_json	file:
+__anon332590a81902	include/json.hpp	/^        {$/;"	f	function:nlohmann::basic_json::patch	file:
+__anon332590a81a02	include/json.hpp	/^        {$/;"	f	function:nlohmann::basic_json::patch	file:
+__anon332590a81b02	include/json.hpp	/^        {$/;"	f	function:nlohmann::basic_json::patch	file:
+__anon332590a81c02	include/json.hpp	/^            {$/;"	f	function:nlohmann::basic_json::patch	typeref:typename:basic_json &	file:
+__anon6eab55d00102	algorithms.cpp	/^			if (any_of(info.illegal.begin(), info.illegal.end(), [&r] (char illegal) {return static_cast</;"	f	function:randpw	file:
+accept	include/json.hpp	/^    bool accept(const bool strict = true)$/;"	f	class:nlohmann::detail::parser	typeref:typename:bool
+accept	include/json.hpp	/^    static bool accept(IteratorType first, IteratorType last)$/;"	f	class:nlohmann::basic_json	typeref:typename:bool
+accept	include/json.hpp	/^    static bool accept(detail::input_adapter i)$/;"	f	class:nlohmann::basic_json	typeref:typename:bool
+accept	include/json.hpp	/^    static bool accept(detail::input_adapter& i)$/;"	f	class:nlohmann::basic_json	typeref:typename:bool
+accept_internal	include/json.hpp	/^    bool accept_internal()$/;"	f	class:nlohmann::detail::parser	typeref:typename:bool
+add	include/json.hpp	/^        enum class patch_operations {add, remove, replace, move, copy, test, invalid};$/;"	e	enum:nlohmann::basic_json::patch::patch_operations
+add	include/json.hpp	/^    void add(int c)$/;"	f	class:nlohmann::detail::lexer	typeref:typename:void
+adl_serializer	include/json.hpp	/^struct adl_serializer$/;"	s	namespace:nlohmann
+allocator_type	include/json.hpp	/^    using allocator_type = AllocatorType<basic_json>;$/;"	t	class:nlohmann::basic_json	typeref:typename:AllocatorType<basic_json>
+allow_exceptions	include/json.hpp	/^    const bool allow_exceptions = true;$/;"	m	class:nlohmann::detail::parser	typeref:typename:const bool
+anchor	include/json.hpp	/^        IteratorType anchor;$/;"	m	class:nlohmann::detail::iteration_proxy::iteration_proxy_internal	typeref:typename:IteratorType
+append_exponent	include/json.hpp	/^inline char* append_exponent(char* buf, int e)$/;"	f	namespace:nlohmann::detail::dtoa_impl	typeref:typename:char *
+array	include/json.hpp	/^        array_t* array;$/;"	m	union:nlohmann::basic_json::json_value	typeref:typename:array_t *
+array	include/json.hpp	/^    array,            \/\/\/< array (ordered collection of values)$/;"	e	enum:nlohmann::detail::value_t
+array	include/json.hpp	/^    static basic_json array(initializer_list_t init = {})$/;"	f	class:nlohmann::basic_json	typeref:typename:basic_json
+array_end	include/json.hpp	/^        array_end,$/;"	e	enum:nlohmann::detail::parser::parse_event_t
+array_index	include/json.hpp	/^        std::size_t array_index = 0;$/;"	m	class:nlohmann::detail::iteration_proxy::iteration_proxy_internal	typeref:typename:std::size_t
+array_index	include/json.hpp	/^    static int array_index(const std::string& s)$/;"	f	class:nlohmann::json_pointer	typeref:typename:int
+array_iterator	include/json.hpp	/^    typename BasicJsonType::array_t::iterator array_iterator {};$/;"	m	struct:nlohmann::detail::internal_iterator	typeref:typename:BasicJsonType::array_t::iterator
+array_start	include/json.hpp	/^        array_start,$/;"	e	enum:nlohmann::detail::parser::parse_event_t
+array_t	include/json.hpp	/^    using array_t = ArrayType<basic_json, AllocatorType<basic_json>>;$/;"	t	class:nlohmann::basic_json	typeref:typename:ArrayType<basic_json,AllocatorType<basic_json>>
+array_t	include/json.hpp	/^    using array_t = typename BasicJsonType::array_t;$/;"	t	class:nlohmann::detail::iter_impl	typeref:typename:BasicJsonType::array_t
+assert_invariant	include/json.hpp	/^    void assert_invariant() const noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:void
+at	include/json.hpp	/^    const_reference at(const json_pointer& ptr) const$/;"	f	class:nlohmann::basic_json	typeref:typename:const_reference
+at	include/json.hpp	/^    const_reference at(const typename object_t::key_type& key) const$/;"	f	class:nlohmann::basic_json	typeref:typename:const_reference
+at	include/json.hpp	/^    const_reference at(size_type idx) const$/;"	f	class:nlohmann::basic_json	typeref:typename:const_reference
+at	include/json.hpp	/^    reference at(const json_pointer& ptr)$/;"	f	class:nlohmann::basic_json	typeref:typename:reference
+at	include/json.hpp	/^    reference at(const typename object_t::key_type& key)$/;"	f	class:nlohmann::basic_json	typeref:typename:reference
+at	include/json.hpp	/^    reference at(size_type idx)$/;"	f	class:nlohmann::basic_json	typeref:typename:reference
+back	include/json.hpp	/^    const_reference back() const$/;"	f	class:nlohmann::basic_json	typeref:typename:const_reference
+back	include/json.hpp	/^    reference back()$/;"	f	class:nlohmann::basic_json	typeref:typename:reference
+base_iterator	include/json.hpp	/^    using base_iterator = std::reverse_iterator<Base>;$/;"	t	class:nlohmann::detail::json_reverse_iterator	typeref:typename:std::reverse_iterator<Base>
+basic_json	include/json.hpp	/^    basic_json(InputIT first, InputIT last)$/;"	f	class:nlohmann::basic_json
+basic_json	include/json.hpp	/^    basic_json(basic_json&& other) noexcept$/;"	f	class:nlohmann::basic_json
+basic_json	include/json.hpp	/^    basic_json(const BasicJsonType& val)$/;"	f	class:nlohmann::basic_json
+basic_json	include/json.hpp	/^    basic_json(const basic_json& other)$/;"	f	class:nlohmann::basic_json
+basic_json	include/json.hpp	/^    basic_json(const detail::json_ref<basic_json>& ref)$/;"	f	class:nlohmann::basic_json
+basic_json	include/json.hpp	/^    basic_json(const value_t v)$/;"	f	class:nlohmann::basic_json
+basic_json	include/json.hpp	/^    basic_json(initializer_list_t init,$/;"	f	class:nlohmann::basic_json
+basic_json	include/json.hpp	/^    basic_json(size_type cnt, const basic_json& val)$/;"	f	class:nlohmann::basic_json
+basic_json	include/json.hpp	/^    basic_json(std::nullptr_t = nullptr) noexcept$/;"	f	class:nlohmann::basic_json
+basic_json	include/json.hpp	/^class basic_json$/;"	c	namespace:nlohmann
+basic_json_t	include/json.hpp	/^    using basic_json_t = NLOHMANN_BASIC_JSON_TPL;$/;"	t	class:nlohmann::basic_json	typeref:typename:NLOHMANN_BASIC_JSON_TPL
+begin	include/json.hpp	/^    const_iterator begin() const noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:const_iterator
+begin	include/json.hpp	/^    iteration_proxy_internal begin() noexcept$/;"	f	class:nlohmann::detail::iteration_proxy	typeref:typename:iteration_proxy_internal
+begin	include/json.hpp	/^    iterator begin() noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:iterator
+begin_array	include/json.hpp	/^        begin_array,      \/\/\/< the character for array begin `[`$/;"	e	enum:nlohmann::detail::lexer::token_type
+begin_object	include/json.hpp	/^        begin_object,     \/\/\/< the character for object begin `{`$/;"	e	enum:nlohmann::detail::lexer::token_type
+begin_value	include/json.hpp	/^    static constexpr difference_type begin_value = 0;$/;"	m	class:nlohmann::detail::primitive_iterator_t	typeref:typename:difference_type
+binary_reader	include/json.hpp	/^    explicit binary_reader(input_adapter_t adapter) : ia(std::move(adapter))$/;"	f	class:nlohmann::detail::binary_reader
+binary_reader	include/json.hpp	/^    using binary_reader = ::nlohmann::detail::binary_reader<basic_json>;$/;"	t	class:nlohmann::basic_json	typeref:typename:::nlohmann::detail::binary_reader<basic_json>
+binary_reader	include/json.hpp	/^class binary_reader$/;"	c	namespace:nlohmann::detail
+binary_writer	include/json.hpp	/^    explicit binary_writer(output_adapter_t<CharType> adapter) : oa(adapter)$/;"	f	class:nlohmann::detail::binary_writer
+binary_writer	include/json.hpp	/^    template<typename CharType> using binary_writer = ::nlohmann::detail::binary_writer<basic_js/;"	t	class:nlohmann::basic_json	typeref:typename:::nlohmann::detail::binary_writer<basic_json,CharType>
+binary_writer	include/json.hpp	/^class binary_writer$/;"	c	namespace:nlohmann::detail
+bits_type	include/json.hpp	/^    using bits_type = typename std::conditional< kPrecision == 24, uint32_t, uint64_t >::type;$/;"	t	function:nlohmann::detail::dtoa_impl::compute_boundaries	typeref:typename:std::conditional<kPrecision==24,uint32_t,uint64_t>::type
+boolean	include/json.hpp	/^        boolean_t boolean;$/;"	m	union:nlohmann::basic_json::json_value	typeref:typename:boolean_t
+boolean	include/json.hpp	/^    boolean,          \/\/\/< boolean value$/;"	e	enum:nlohmann::detail::value_t
+boolean_t	include/json.hpp	/^    using boolean_t = BooleanType;$/;"	t	class:nlohmann::basic_json	typeref:typename:BooleanType
+boundaries	include/json.hpp	/^struct boundaries$/;"	s	namespace:nlohmann::detail::dtoa_impl
+byte	include/json.hpp	/^    const std::size_t byte;$/;"	m	class:nlohmann::detail::parse_error	typeref:typename:const std::size_t
+cached_power	include/json.hpp	/^struct cached_power \/\/ c = f * 2^e ~= 10^k$/;"	s	namespace:nlohmann::detail::dtoa_impl
+call	include/json.hpp	/^    auto call(BasicJsonType& j, T&& val, priority_tag<1> \/*unused*\/) const noexcept(noexcept(t/;"	f	struct:nlohmann::detail::to_json_fn	typeref:typename:auto
+call	include/json.hpp	/^    auto call(const BasicJsonType& j, T& val, priority_tag<1> \/*unused*\/) const$/;"	f	struct:nlohmann::detail::from_json_fn	typeref:typename:auto
+call	include/json.hpp	/^    void call(BasicJsonType& \/*unused*\/, T&& \/*unused*\/, priority_tag<0> \/*unused*\/) const/;"	f	struct:nlohmann::detail::to_json_fn	typeref:typename:void
+call	include/json.hpp	/^    void call(const BasicJsonType& \/*unused*\/, T& \/*unused*\/, priority_tag<0> \/*unused*\/) /;"	f	struct:nlohmann::detail::from_json_fn	typeref:typename:void
+callback	include/json.hpp	/^    const parser_callback_t callback = nullptr;$/;"	m	class:nlohmann::detail::parser	typeref:typename:const parser_callback_t
+cbegin	include/json.hpp	/^    const_iterator cbegin() const noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:const_iterator
+cend	include/json.hpp	/^    const_iterator cend() const noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:const_iterator
+chars_read	include/json.hpp	/^    std::size_t chars_read = 0;$/;"	m	class:nlohmann::detail::binary_reader	typeref:typename:std::size_t
+chars_read	include/json.hpp	/^    std::size_t chars_read = 0;$/;"	m	class:nlohmann::detail::lexer	typeref:typename:std::size_t
+clear	include/json.hpp	/^    void clear() noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:void
+compute_boundaries	include/json.hpp	/^boundaries compute_boundaries(FloatType value)$/;"	f	namespace:nlohmann::detail::dtoa_impl	typeref:typename:boundaries
+conjunction	include/json.hpp	/^struct conjunction<B1, Bn...> : std::conditional<bool(B1::value), conjunction<Bn...>, B1>::type /;"	s	namespace:nlohmann::detail
+conjunction	include/json.hpp	/^template<class B1> struct conjunction<B1> : B1 {};$/;"	s	namespace:nlohmann::detail
+conjunction	include/json.hpp	/^template<class...> struct conjunction : std::true_type {};$/;"	s	namespace:nlohmann::detail
+const_iterator	include/json.hpp	/^    using const_iterator = iter_impl<const basic_json>;$/;"	t	class:nlohmann::basic_json	typeref:typename:iter_impl<const basic_json>
+const_pointer	include/json.hpp	/^    using const_pointer = typename std::allocator_traits<allocator_type>::const_pointer;$/;"	t	class:nlohmann::basic_json	typeref:typename:std::allocator_traits<allocator_type>::const_pointer
+const_reference	include/json.hpp	/^    using const_reference = const value_type&;$/;"	t	class:nlohmann::basic_json	typeref:typename:const value_type &
+const_reverse_iterator	include/json.hpp	/^    using const_reverse_iterator = json_reverse_iterator<typename basic_json::const_iterator>;$/;"	t	class:nlohmann::basic_json	typeref:typename:json_reverse_iterator<typename basic_json::const_iterator>
+construct	include/json.hpp	/^    static void construct(BasicJsonType& j, const CompatibleArrayType& arr)$/;"	f	struct:nlohmann::detail::external_constructor	typeref:typename:void
+construct	include/json.hpp	/^    static void construct(BasicJsonType& j, const CompatibleObjectType& obj)$/;"	f	struct:nlohmann::detail::external_constructor	typeref:typename:void
+construct	include/json.hpp	/^    static void construct(BasicJsonType& j, const std::valarray<T>& arr)$/;"	f	struct:nlohmann::detail::external_constructor	typeref:typename:void
+construct	include/json.hpp	/^    static void construct(BasicJsonType& j, const std::vector<bool>& arr)$/;"	f	struct:nlohmann::detail::external_constructor	typeref:typename:void
+construct	include/json.hpp	/^    static void construct(BasicJsonType& j, const typename BasicJsonType::array_t& arr)$/;"	f	struct:nlohmann::detail::external_constructor	typeref:typename:void
+construct	include/json.hpp	/^    static void construct(BasicJsonType& j, const typename BasicJsonType::object_t& obj)$/;"	f	struct:nlohmann::detail::external_constructor	typeref:typename:void
+construct	include/json.hpp	/^    static void construct(BasicJsonType& j, const typename BasicJsonType::string_t& s)$/;"	f	struct:nlohmann::detail::external_constructor	typeref:typename:void
+construct	include/json.hpp	/^    static void construct(BasicJsonType& j, typename BasicJsonType::array_t&& arr)$/;"	f	struct:nlohmann::detail::external_constructor	typeref:typename:void
+construct	include/json.hpp	/^    static void construct(BasicJsonType& j, typename BasicJsonType::boolean_t b) noexcept$/;"	f	struct:nlohmann::detail::external_constructor	typeref:typename:void
+construct	include/json.hpp	/^    static void construct(BasicJsonType& j, typename BasicJsonType::number_float_t val) noexcept$/;"	f	struct:nlohmann::detail::external_constructor	typeref:typename:void
+construct	include/json.hpp	/^    static void construct(BasicJsonType& j, typename BasicJsonType::number_integer_t val) noexce/;"	f	struct:nlohmann::detail::external_constructor	typeref:typename:void
+construct	include/json.hpp	/^    static void construct(BasicJsonType& j, typename BasicJsonType::number_unsigned_t val) noexc/;"	f	struct:nlohmann::detail::external_constructor	typeref:typename:void
+construct	include/json.hpp	/^    static void construct(BasicJsonType& j, typename BasicJsonType::object_t&& obj)$/;"	f	struct:nlohmann::detail::external_constructor	typeref:typename:void
+construct	include/json.hpp	/^    static void construct(BasicJsonType& j, typename BasicJsonType::string_t&& s)$/;"	f	struct:nlohmann::detail::external_constructor	typeref:typename:void
+container	include/json.hpp	/^    typename IteratorType::reference container;$/;"	m	class:nlohmann::detail::iteration_proxy	typeref:typename:IteratorType::reference
+convertToNumber	utilities.cpp	/^inline int convertToNumber(char c)$/;"	f	typeref:typename:int
+copy	include/json.hpp	/^        enum class patch_operations {add, remove, replace, move, copy, test, invalid};$/;"	e	enum:nlohmann::basic_json::patch::patch_operations
+count	include/json.hpp	/^    size_type count(KeyT&& key) const$/;"	f	class:nlohmann::basic_json	typeref:typename:size_type
+crbegin	include/json.hpp	/^    const_reverse_iterator crbegin() const noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:const_reverse_iterator
+create	include/json.hpp	/^    static T* create(Args&& ... args)$/;"	f	class:nlohmann::basic_json	typeref:typename:T *
+create	include/json.hpp	/^    static invalid_iterator create(int id_, const std::string& what_arg)$/;"	f	class:nlohmann::detail::invalid_iterator	typeref:typename:invalid_iterator
+create	include/json.hpp	/^    static other_error create(int id_, const std::string& what_arg)$/;"	f	class:nlohmann::detail::other_error	typeref:typename:other_error
+create	include/json.hpp	/^    static out_of_range create(int id_, const std::string& what_arg)$/;"	f	class:nlohmann::detail::out_of_range	typeref:typename:out_of_range
+create	include/json.hpp	/^    static parse_error create(int id_, std::size_t byte_, const std::string& what_arg)$/;"	f	class:nlohmann::detail::parse_error	typeref:typename:parse_error
+create	include/json.hpp	/^    static type_error create(int id_, const std::string& what_arg)$/;"	f	class:nlohmann::detail::type_error	typeref:typename:type_error
+create_password	main.cpp	/^void create_password(site temp, selector flag)$/;"	f	typeref:typename:void
+crend	include/json.hpp	/^    const_reverse_iterator crend() const noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:const_reverse_iterator
+current	include/json.hpp	/^    int current = std::char_traits<char>::eof();$/;"	m	class:nlohmann::detail::binary_reader	typeref:typename:int
+current	include/json.hpp	/^    std::char_traits<char>::int_type current = std::char_traits<char>::eof();$/;"	m	class:nlohmann::detail::lexer	typeref:typename:std::char_traits<char>::int_type
+cursor	include/json.hpp	/^    const char* cursor;$/;"	m	class:nlohmann::detail::input_buffer_adapter	typeref:typename:const char *
+decayed	include/json.hpp	/^        using decayed = uncvref_t<T>;$/;"	t	function:nlohmann::detail::from_json_fn::call	typeref:typename:uncvref_t<T>
+decayed	include/json.hpp	/^        using decayed = uncvref_t<T>;$/;"	t	function:nlohmann::detail::to_json_fn::call	typeref:typename:uncvref_t<T>
+decimal_point	include/json.hpp	/^    const char decimal_point = '\\0';$/;"	m	class:nlohmann::detail::serializer	typeref:typename:const char
+decimal_point_char	include/json.hpp	/^    const char decimal_point_char = '.';$/;"	m	class:nlohmann::detail::lexer	typeref:typename:const char
+decode	include/json.hpp	/^    static uint8_t decode(uint8_t& state, uint32_t& codep, const uint8_t byte) noexcept$/;"	f	class:nlohmann::detail::serializer	typeref:typename:uint8_t
+depth	include/json.hpp	/^    int depth = 0;$/;"	m	class:nlohmann::detail::parser	typeref:typename:int
+destroy	include/json.hpp	/^        void destroy(value_t t) noexcept$/;"	f	union:nlohmann::basic_json::json_value	typeref:typename:void
+detail	include/json.hpp	/^namespace detail$/;"	n	namespace:nlohmann
+diff	include/json.hpp	/^    static basic_json diff(const basic_json& source, const basic_json& target,$/;"	f	class:nlohmann::basic_json	typeref:typename:basic_json
+difference_type	include/json.hpp	/^    using difference_type = std::ptrdiff_t;$/;"	t	class:nlohmann::basic_json	typeref:typename:std::ptrdiff_t
+difference_type	include/json.hpp	/^    using difference_type = std::ptrdiff_t;$/;"	t	class:nlohmann::detail::json_reverse_iterator	typeref:typename:std::ptrdiff_t
+difference_type	include/json.hpp	/^    using difference_type = std::ptrdiff_t;$/;"	t	class:nlohmann::detail::primitive_iterator_t	typeref:typename:std::ptrdiff_t
+difference_type	include/json.hpp	/^    using difference_type = typename BasicJsonType::difference_type;$/;"	t	class:nlohmann::detail::iter_impl	typeref:typename:BasicJsonType::difference_type
+discarded	include/json.hpp	/^    discarded         \/\/\/< discarded by the the parser callback function$/;"	e	enum:nlohmann::detail::value_t
+diyfp	include/json.hpp	/^    constexpr diyfp() noexcept : f(0), e(0) {}$/;"	f	struct:nlohmann::detail::dtoa_impl::diyfp
+diyfp	include/json.hpp	/^    constexpr diyfp(uint64_t f_, int e_) noexcept : f(f_), e(e_) {}$/;"	f	struct:nlohmann::detail::dtoa_impl::diyfp
+diyfp	include/json.hpp	/^struct diyfp \/\/ f * 2^e$/;"	s	namespace:nlohmann::detail::dtoa_impl
+dtoa_impl	include/json.hpp	/^namespace dtoa_impl$/;"	n	namespace:nlohmann::detail
+dump	include/json.hpp	/^    string_t dump(const int indent = -1, const char indent_char = ' ',$/;"	f	class:nlohmann::basic_json	typeref:typename:string_t
+dump	include/json.hpp	/^    void dump(const BasicJsonType& val, const bool pretty_print,$/;"	f	class:nlohmann::detail::serializer	typeref:typename:void
+dump_escaped	include/json.hpp	/^    void dump_escaped(const string_t& s, const bool ensure_ascii)$/;"	f	class:nlohmann::detail::serializer	typeref:typename:void
+dump_float	include/json.hpp	/^    void dump_float(number_float_t x)$/;"	f	class:nlohmann::detail::serializer	typeref:typename:void
+dump_float	include/json.hpp	/^    void dump_float(number_float_t x, std::false_type \/*is_ieee_single_or_double*\/)$/;"	f	class:nlohmann::detail::serializer	typeref:typename:void
+dump_float	include/json.hpp	/^    void dump_float(number_float_t x, std::true_type \/*is_ieee_single_or_double*\/)$/;"	f	class:nlohmann::detail::serializer	typeref:typename:void
+dump_integer	include/json.hpp	/^    void dump_integer(NumberType x)$/;"	f	class:nlohmann::detail::serializer	typeref:typename:void
+e	include/json.hpp	/^    int e;$/;"	m	struct:nlohmann::detail::dtoa_impl::cached_power	typeref:typename:int
+e	include/json.hpp	/^    int e;$/;"	m	struct:nlohmann::detail::dtoa_impl::diyfp	typeref:typename:int
+email	include/site.hpp	/^	std::string uname, website, notes, illegal, password, email;$/;"	m	struct:site	typeref:typename:std::string
+emplace	include/json.hpp	/^    std::pair<iterator, bool> emplace(Args&& ... args)$/;"	f	class:nlohmann::basic_json	typeref:typename:std::pair<iterator,bool>
+emplace_back	include/json.hpp	/^    void emplace_back(Args&& ... args)$/;"	f	class:nlohmann::basic_json	typeref:typename:void
+empty	include/json.hpp	/^    bool empty() const noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:bool
+enable_if_t	include/json.hpp	/^using enable_if_t = typename std::enable_if<B, T>::type;$/;"	t	namespace:nlohmann::detail	typeref:typename:std::enable_if<B,T>::type
+end	include/json.hpp	/^    const_iterator end() const noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:const_iterator
+end	include/json.hpp	/^    iteration_proxy_internal end() noexcept$/;"	f	class:nlohmann::detail::iteration_proxy	typeref:typename:iteration_proxy_internal
+end	include/json.hpp	/^    iterator end() noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:iterator
+end_array	include/json.hpp	/^        end_array,        \/\/\/< the character for array end `]`$/;"	e	enum:nlohmann::detail::lexer::token_type
+end_object	include/json.hpp	/^        end_object,       \/\/\/< the character for object end `}`$/;"	e	enum:nlohmann::detail::lexer::token_type
+end_of_input	include/json.hpp	/^        end_of_input,     \/\/\/< indicating the end of the input buffer$/;"	e	enum:nlohmann::detail::lexer::token_type
+end_value	include/json.hpp	/^    static constexpr difference_type end_value = begin_value + 1;$/;"	m	class:nlohmann::detail::primitive_iterator_t	typeref:typename:difference_type
+erase	include/json.hpp	/^    IteratorType erase(IteratorType first, IteratorType last)$/;"	f	class:nlohmann::basic_json	typeref:typename:IteratorType
+erase	include/json.hpp	/^    IteratorType erase(IteratorType pos)$/;"	f	class:nlohmann::basic_json	typeref:typename:IteratorType
+erase	include/json.hpp	/^    size_type erase(const typename object_t::key_type& key)$/;"	f	class:nlohmann::basic_json	typeref:typename:size_type
+erase	include/json.hpp	/^    void erase(const size_type idx)$/;"	f	class:nlohmann::basic_json	typeref:typename:void
+error_message	include/json.hpp	/^    const char* error_message = "";$/;"	m	class:nlohmann::detail::lexer	typeref:typename:const char *
+errored	include/json.hpp	/^    bool errored = false;$/;"	m	class:nlohmann::detail::parser	typeref:typename:bool
+escape	include/json.hpp	/^    static std::string escape(std::string s)$/;"	f	class:nlohmann::json_pointer	typeref:typename:std::string
+exception	include/json.hpp	/^    exception(int id_, const char* what_arg) : id(id_), m(what_arg) {}$/;"	f	class:nlohmann::detail::exception
+exception	include/json.hpp	/^    using exception = detail::exception;$/;"	t	class:nlohmann::basic_json	typeref:typename:detail::exception
+exception	include/json.hpp	/^class exception : public std::exception$/;"	c	namespace:nlohmann::detail
+exists	utilities.cpp	/^inline bool exists(string toFind)$/;"	f	typeref:typename:bool
+expect	include/json.hpp	/^    bool expect(token_type t)$/;"	f	class:nlohmann::detail::parser	typeref:typename:bool
+expect_eof	include/json.hpp	/^    void expect_eof() const$/;"	f	class:nlohmann::detail::binary_reader	typeref:typename:void
+expected	include/json.hpp	/^    token_type expected = token_type::uninitialized;$/;"	m	class:nlohmann::detail::parser	typeref:typename:token_type
+external_constructor	include/json.hpp	/^struct external_constructor<value_t::array>$/;"	s	namespace:nlohmann::detail
+external_constructor	include/json.hpp	/^struct external_constructor<value_t::boolean>$/;"	s	namespace:nlohmann::detail
+external_constructor	include/json.hpp	/^struct external_constructor<value_t::number_float>$/;"	s	namespace:nlohmann::detail
+external_constructor	include/json.hpp	/^struct external_constructor<value_t::number_integer>$/;"	s	namespace:nlohmann::detail
+external_constructor	include/json.hpp	/^struct external_constructor<value_t::number_unsigned>$/;"	s	namespace:nlohmann::detail
+external_constructor	include/json.hpp	/^struct external_constructor<value_t::object>$/;"	s	namespace:nlohmann::detail
+external_constructor	include/json.hpp	/^struct external_constructor<value_t::string>$/;"	s	namespace:nlohmann::detail
+f	include/json.hpp	/^    uint64_t f;$/;"	m	struct:nlohmann::detail::dtoa_impl::cached_power	typeref:typename:uint64_t
+f	include/json.hpp	/^    uint64_t f;$/;"	m	struct:nlohmann::detail::dtoa_impl::diyfp	typeref:typename:uint64_t
+find	include/json.hpp	/^    const_iterator find(KeyT&& key) const$/;"	f	class:nlohmann::basic_json	typeref:typename:const_iterator
+find	include/json.hpp	/^    iterator find(KeyT&& key)$/;"	f	class:nlohmann::basic_json	typeref:typename:iterator
+find_largest_pow10	include/json.hpp	/^inline int find_largest_pow10(const uint32_t n, uint32_t& pow10)$/;"	f	namespace:nlohmann::detail::dtoa_impl	typeref:typename:int
+flatten	include/json.hpp	/^    basic_json flatten() const$/;"	f	class:nlohmann::basic_json	typeref:typename:basic_json
+flatten	include/json.hpp	/^    static void flatten(const std::string& reference_string,$/;"	f	class:nlohmann::json_pointer	typeref:typename:void
+format_buffer	include/json.hpp	/^inline char* format_buffer(char* buf, int len, int decimal_exponent,$/;"	f	namespace:nlohmann::detail::dtoa_impl	typeref:typename:char *
+from_cbor	include/json.hpp	/^    static basic_json from_cbor(A1 && a1, A2 && a2, const bool strict = true)$/;"	f	class:nlohmann::basic_json	typeref:typename:basic_json
+from_cbor	include/json.hpp	/^    static basic_json from_cbor(detail::input_adapter i,$/;"	f	class:nlohmann::basic_json	typeref:typename:basic_json
+from_json	include/json.hpp	/^    static void from_json(BasicJsonType&& j, ValueType& val) noexcept($/;"	f	struct:nlohmann::adl_serializer	typeref:typename:void
+from_json	include/json.hpp	/^constexpr const auto& from_json = detail::static_const<detail::from_json_fn>::value;$/;"	v	namespace:nlohmann::__anon332590a80510	typeref:typename:const auto &
+from_json	include/json.hpp	/^void from_json(const BasicJsonType& j, ArithmeticType& val)$/;"	f	namespace:nlohmann::detail	typeref:typename:void
+from_json	include/json.hpp	/^void from_json(const BasicJsonType& j, CompatibleArrayType& arr)$/;"	f	namespace:nlohmann::detail	typeref:typename:void
+from_json	include/json.hpp	/^void from_json(const BasicJsonType& j, CompatibleObjectType& obj)$/;"	f	namespace:nlohmann::detail	typeref:typename:void
+from_json	include/json.hpp	/^void from_json(const BasicJsonType& j, EnumType& e)$/;"	f	namespace:nlohmann::detail	typeref:typename:void
+from_json	include/json.hpp	/^void from_json(const BasicJsonType& j, std::forward_list<T, Allocator>& l)$/;"	f	namespace:nlohmann::detail	typeref:typename:void
+from_json	include/json.hpp	/^void from_json(const BasicJsonType& j, std::pair<A1, A2>& p)$/;"	f	namespace:nlohmann::detail	typeref:typename:void
+from_json	include/json.hpp	/^void from_json(const BasicJsonType& j, std::tuple<Args...>& t)$/;"	f	namespace:nlohmann::detail	typeref:typename:void
+from_json	include/json.hpp	/^void from_json(const BasicJsonType& j, std::valarray<T>& l)$/;"	f	namespace:nlohmann::detail	typeref:typename:void
+from_json	include/json.hpp	/^void from_json(const BasicJsonType& j, typename BasicJsonType::array_t& arr)$/;"	f	namespace:nlohmann::detail	typeref:typename:void
+from_json	include/json.hpp	/^void from_json(const BasicJsonType& j, typename BasicJsonType::boolean_t& b)$/;"	f	namespace:nlohmann::detail	typeref:typename:void
+from_json	include/json.hpp	/^void from_json(const BasicJsonType& j, typename BasicJsonType::number_float_t& val)$/;"	f	namespace:nlohmann::detail	typeref:typename:void
+from_json	include/json.hpp	/^void from_json(const BasicJsonType& j, typename BasicJsonType::number_integer_t& val)$/;"	f	namespace:nlohmann::detail	typeref:typename:void
+from_json	include/json.hpp	/^void from_json(const BasicJsonType& j, typename BasicJsonType::number_unsigned_t& val)$/;"	f	namespace:nlohmann::detail	typeref:typename:void
+from_json	include/json.hpp	/^void from_json(const BasicJsonType& j, typename BasicJsonType::string_t& s)$/;"	f	namespace:nlohmann::detail	typeref:typename:void
+from_json_array_impl	include/json.hpp	/^auto from_json_array_impl(const BasicJsonType& j, CompatibleArrayType& arr, priority_tag<1> \/*u/;"	f	namespace:nlohmann::detail	typeref:typename:decltype (arr.reserve (std::declval<typename CompatibleArrayType::size_type> ()),void ())
+from_json_array_impl	include/json.hpp	/^void from_json_array_impl(const BasicJsonType& j, CompatibleArrayType& arr, priority_tag<0> \/*u/;"	f	namespace:nlohmann::detail	typeref:typename:void
+from_json_array_impl	include/json.hpp	/^void from_json_array_impl(const BasicJsonType& j, std::array<T, N>& arr, priority_tag<2> \/*unus/;"	f	namespace:nlohmann::detail	typeref:typename:void
+from_json_fn	include/json.hpp	/^struct from_json_fn$/;"	s	namespace:nlohmann::detail
+from_json_tuple_impl	include/json.hpp	/^void from_json_tuple_impl(const BasicJsonType& j, Tuple& t, index_sequence<Idx...>)$/;"	f	namespace:nlohmann::detail	typeref:typename:void
+from_msgpack	include/json.hpp	/^    static basic_json from_msgpack(A1 && a1, A2 && a2, const bool strict = true)$/;"	f	class:nlohmann::basic_json	typeref:typename:basic_json
+from_msgpack	include/json.hpp	/^    static basic_json from_msgpack(detail::input_adapter i,$/;"	f	class:nlohmann::basic_json	typeref:typename:basic_json
+from_ubjson	include/json.hpp	/^    static basic_json from_ubjson(A1 && a1, A2 && a2, const bool strict = true)$/;"	f	class:nlohmann::basic_json	typeref:typename:basic_json
+from_ubjson	include/json.hpp	/^    static basic_json from_ubjson(detail::input_adapter i,$/;"	f	class:nlohmann::basic_json	typeref:typename:basic_json
+front	include/json.hpp	/^    const_reference front() const$/;"	f	class:nlohmann::basic_json	typeref:typename:const_reference
+front	include/json.hpp	/^    reference front()$/;"	f	class:nlohmann::basic_json	typeref:typename:reference
+get	include/json.hpp	/^    BasicJsonType get() const$/;"	f	class:nlohmann::basic_json	typeref:typename:BasicJsonType
+get	include/json.hpp	/^    PointerType get() noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:PointerType
+get	include/json.hpp	/^    basic_json get() const$/;"	f	class:nlohmann::basic_json	typeref:typename:basic_json
+get	include/json.hpp	/^    constexpr const PointerType get() const noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:const PointerType
+get	include/json.hpp	/^    int get()$/;"	f	class:nlohmann::detail::binary_reader	typeref:typename:int
+get	include/json.hpp	/^    std::char_traits<char>::int_type get()$/;"	f	class:nlohmann::detail::lexer	typeref:typename:std::char_traits<char>::int_type
+get_allocator	include/json.hpp	/^    static allocator_type get_allocator()$/;"	f	class:nlohmann::basic_json	typeref:typename:allocator_type
+get_and_create	include/json.hpp	/^    BasicJsonType& get_and_create(BasicJsonType& j) const$/;"	f	class:nlohmann::json_pointer	typeref:typename:BasicJsonType &
+get_arithmetic_value	include/json.hpp	/^void get_arithmetic_value(const BasicJsonType& j, ArithmeticType& val)$/;"	f	namespace:nlohmann::detail	typeref:typename:void
+get_cached_power_for_binary_exponent	include/json.hpp	/^inline cached_power get_cached_power_for_binary_exponent(int e)$/;"	f	namespace:nlohmann::detail::dtoa_impl	typeref:typename:cached_power
+get_cbor_array	include/json.hpp	/^    BasicJsonType get_cbor_array(const NumberType len)$/;"	f	class:nlohmann::detail::binary_reader	typeref:typename:BasicJsonType
+get_cbor_object	include/json.hpp	/^    BasicJsonType get_cbor_object(const NumberType len)$/;"	f	class:nlohmann::detail::binary_reader	typeref:typename:BasicJsonType
+get_cbor_string	include/json.hpp	/^    string_t get_cbor_string()$/;"	f	class:nlohmann::detail::binary_reader	typeref:typename:string_t
+get_character	include/json.hpp	/^    std::char_traits<char>::int_type get_character() noexcept override$/;"	f	class:nlohmann::detail::input_buffer_adapter	typeref:typename:std::char_traits<char>::int_type
+get_character	include/json.hpp	/^    std::char_traits<char>::int_type get_character() override$/;"	f	class:nlohmann::detail::input_stream_adapter	typeref:typename:std::char_traits<char>::int_type
+get_checked	include/json.hpp	/^    BasicJsonType& get_checked(BasicJsonType* ptr) const$/;"	f	class:nlohmann::json_pointer	typeref:typename:BasicJsonType &
+get_checked	include/json.hpp	/^    const BasicJsonType& get_checked(const BasicJsonType* ptr) const$/;"	f	class:nlohmann::json_pointer	typeref:typename:const BasicJsonType &
+get_codepoint	include/json.hpp	/^    int get_codepoint()$/;"	f	class:nlohmann::detail::lexer	typeref:typename:int
+get_decimal_point	include/json.hpp	/^    static char get_decimal_point() noexcept$/;"	f	class:nlohmann::detail::lexer	typeref:typename:char
+get_error_message	include/json.hpp	/^    constexpr const char* get_error_message() const noexcept$/;"	f	class:nlohmann::detail::lexer	typeref:typename:const char *
+get_ignore_noop	include/json.hpp	/^    int get_ignore_noop()$/;"	f	class:nlohmann::detail::binary_reader	typeref:typename:int
+get_impl	include/json.hpp	/^    boolean_t get_impl(boolean_t* \/*unused*\/) const$/;"	f	class:nlohmann::basic_json	typeref:typename:boolean_t
+get_impl_ptr	include/json.hpp	/^    array_t* get_impl_ptr(array_t* \/*unused*\/) noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:array_t *
+get_impl_ptr	include/json.hpp	/^    boolean_t* get_impl_ptr(boolean_t* \/*unused*\/) noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:boolean_t *
+get_impl_ptr	include/json.hpp	/^    constexpr const array_t* get_impl_ptr(const array_t* \/*unused*\/) const noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:const array_t *
+get_impl_ptr	include/json.hpp	/^    constexpr const boolean_t* get_impl_ptr(const boolean_t* \/*unused*\/) const noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:const boolean_t *
+get_impl_ptr	include/json.hpp	/^    constexpr const number_float_t* get_impl_ptr(const number_float_t* \/*unused*\/) const noexc/;"	f	class:nlohmann::basic_json	typeref:typename:const number_float_t *
+get_impl_ptr	include/json.hpp	/^    constexpr const number_integer_t* get_impl_ptr(const number_integer_t* \/*unused*\/) const n/;"	f	class:nlohmann::basic_json	typeref:typename:const number_integer_t *
+get_impl_ptr	include/json.hpp	/^    constexpr const number_unsigned_t* get_impl_ptr(const number_unsigned_t* \/*unused*\/) const/;"	f	class:nlohmann::basic_json	typeref:typename:const number_unsigned_t *
+get_impl_ptr	include/json.hpp	/^    constexpr const object_t* get_impl_ptr(const object_t* \/*unused*\/) const noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:const object_t *
+get_impl_ptr	include/json.hpp	/^    constexpr const string_t* get_impl_ptr(const string_t* \/*unused*\/) const noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:const string_t *
+get_impl_ptr	include/json.hpp	/^    number_float_t* get_impl_ptr(number_float_t* \/*unused*\/) noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:number_float_t *
+get_impl_ptr	include/json.hpp	/^    number_integer_t* get_impl_ptr(number_integer_t* \/*unused*\/) noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:number_integer_t *
+get_impl_ptr	include/json.hpp	/^    number_unsigned_t* get_impl_ptr(number_unsigned_t* \/*unused*\/) noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:number_unsigned_t *
+get_impl_ptr	include/json.hpp	/^    object_t* get_impl_ptr(object_t* \/*unused*\/) noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:object_t *
+get_impl_ptr	include/json.hpp	/^    string_t* get_impl_ptr(string_t* \/*unused*\/) noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:string_t *
+get_msgpack_array	include/json.hpp	/^    BasicJsonType get_msgpack_array(const NumberType len)$/;"	f	class:nlohmann::detail::binary_reader	typeref:typename:BasicJsonType
+get_msgpack_object	include/json.hpp	/^    BasicJsonType get_msgpack_object(const NumberType len)$/;"	f	class:nlohmann::detail::binary_reader	typeref:typename:BasicJsonType
+get_msgpack_string	include/json.hpp	/^    string_t get_msgpack_string()$/;"	f	class:nlohmann::detail::binary_reader	typeref:typename:string_t
+get_number	include/json.hpp	/^    template<typename NumberType> NumberType get_number()$/;"	f	class:nlohmann::detail::binary_reader	typeref:typename:NumberType
+get_number_float	include/json.hpp	/^    constexpr number_float_t get_number_float() const noexcept$/;"	f	class:nlohmann::detail::lexer	typeref:typename:number_float_t
+get_number_integer	include/json.hpp	/^    constexpr number_integer_t get_number_integer() const noexcept$/;"	f	class:nlohmann::detail::lexer	typeref:typename:number_integer_t
+get_number_unsigned	include/json.hpp	/^    constexpr number_unsigned_t get_number_unsigned() const noexcept$/;"	f	class:nlohmann::detail::lexer	typeref:typename:number_unsigned_t
+get_position	include/json.hpp	/^    constexpr std::size_t get_position() const noexcept$/;"	f	class:nlohmann::detail::lexer	typeref:typename:std::size_t
+get_ptr	include/json.hpp	/^    PointerType get_ptr() noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:PointerType
+get_ptr	include/json.hpp	/^    constexpr const PointerType get_ptr() const noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:const PointerType
+get_ref	include/json.hpp	/^    ReferenceType get_ref() const$/;"	f	class:nlohmann::basic_json	typeref:typename:ReferenceType
+get_ref	include/json.hpp	/^    ReferenceType get_ref()$/;"	f	class:nlohmann::basic_json	typeref:typename:ReferenceType
+get_ref_impl	include/json.hpp	/^    static ReferenceType get_ref_impl(ThisType& obj)$/;"	f	class:nlohmann::basic_json	typeref:typename:ReferenceType
+get_string	include/json.hpp	/^    string_t get_string(const NumberType len)$/;"	f	class:nlohmann::detail::binary_reader	typeref:typename:string_t
+get_token	include/json.hpp	/^    token_type get_token()$/;"	f	class:nlohmann::detail::parser	typeref:typename:token_type
+get_token_string	include/json.hpp	/^    std::string get_token_string() const$/;"	f	class:nlohmann::detail::lexer	typeref:typename:std::string
+get_ubjson_array	include/json.hpp	/^    BasicJsonType get_ubjson_array()$/;"	f	class:nlohmann::detail::binary_reader	typeref:typename:BasicJsonType
+get_ubjson_object	include/json.hpp	/^    BasicJsonType get_ubjson_object()$/;"	f	class:nlohmann::detail::binary_reader	typeref:typename:BasicJsonType
+get_ubjson_size_type	include/json.hpp	/^    std::pair<std::size_t, int> get_ubjson_size_type()$/;"	f	class:nlohmann::detail::binary_reader	typeref:typename:std::pair<std::size_t,int>
+get_ubjson_string	include/json.hpp	/^    string_t get_ubjson_string(const bool get_char = true)$/;"	f	class:nlohmann::detail::binary_reader	typeref:typename:string_t
+get_ubjson_value	include/json.hpp	/^    BasicJsonType get_ubjson_value(const int prefix)$/;"	f	class:nlohmann::detail::binary_reader	typeref:typename:BasicJsonType
+get_unchecked	include/json.hpp	/^    BasicJsonType& get_unchecked(BasicJsonType* ptr) const$/;"	f	class:nlohmann::json_pointer	typeref:typename:BasicJsonType &
+get_unchecked	include/json.hpp	/^    const BasicJsonType& get_unchecked(const BasicJsonType* ptr) const$/;"	f	class:nlohmann::json_pointer	typeref:typename:const BasicJsonType &
+get_value	include/json.hpp	/^    constexpr difference_type get_value() const noexcept$/;"	f	class:nlohmann::detail::primitive_iterator_t	typeref:typename:difference_type
+grisu2	include/json.hpp	/^inline void grisu2(char* buf, int& len, int& decimal_exponent,$/;"	f	namespace:nlohmann::detail::dtoa_impl	typeref:typename:void
+grisu2	include/json.hpp	/^void grisu2(char* buf, int& len, int& decimal_exponent, FloatType value)$/;"	f	namespace:nlohmann::detail::dtoa_impl	typeref:typename:void
+grisu2_digit_gen	include/json.hpp	/^inline void grisu2_digit_gen(char* buffer, int& length, int& decimal_exponent,$/;"	f	namespace:nlohmann::detail::dtoa_impl	typeref:typename:void
+grisu2_round	include/json.hpp	/^inline void grisu2_round(char* buf, int len, uint64_t dist, uint64_t delta,$/;"	f	namespace:nlohmann::detail::dtoa_impl	typeref:typename:void
+has_from_json	include/json.hpp	/^struct has_from_json$/;"	s	namespace:nlohmann::detail
+has_non_default_from_json	include/json.hpp	/^struct has_non_default_from_json$/;"	s	namespace:nlohmann::detail
+has_to_json	include/json.hpp	/^struct has_to_json$/;"	s	namespace:nlohmann::detail
+hash	include/json.hpp	/^struct hash<nlohmann::json>$/;"	s	namespace:std
+help	utilities.cpp	/^inline void help()$/;"	f	typeref:typename:void
+ia	include/json.hpp	/^    detail::input_adapter_t ia = nullptr;$/;"	m	class:nlohmann::detail::lexer	typeref:typename:detail::input_adapter_t
+ia	include/json.hpp	/^    input_adapter_t ia = nullptr;$/;"	m	class:nlohmann::detail::binary_reader	typeref:typename:input_adapter_t
+ia	include/json.hpp	/^    input_adapter_t ia = nullptr;$/;"	m	class:nlohmann::detail::input_adapter	typeref:typename:input_adapter_t
+id	include/json.hpp	/^    const int id;$/;"	m	class:nlohmann::detail::exception	typeref:typename:const int
+illegal	include/site.hpp	/^	std::string uname, website, notes, illegal, password, email;$/;"	m	struct:site	typeref:typename:std::string
+indent_char	include/json.hpp	/^    const char indent_char;$/;"	m	class:nlohmann::detail::serializer	typeref:typename:const char
+indent_string	include/json.hpp	/^    string_t indent_string;$/;"	m	class:nlohmann::detail::serializer	typeref:typename:string_t
+index_sequence	include/json.hpp	/^struct index_sequence$/;"	s	namespace:nlohmann::detail
+index_sequence_for	include/json.hpp	/^using index_sequence_for = make_index_sequence<sizeof...(Ts)>;$/;"	t	namespace:nlohmann::detail
+initializer_list_t	include/json.hpp	/^    using initializer_list_t = std::initializer_list<detail::json_ref<basic_json>>;$/;"	t	class:nlohmann::basic_json	typeref:typename:std::initializer_list<detail::json_ref<basic_json>>
+input_adapter	include/json.hpp	/^    input_adapter(CharT b)$/;"	f	class:nlohmann::detail::input_adapter
+input_adapter	include/json.hpp	/^    input_adapter(CharT b, std::size_t l)$/;"	f	class:nlohmann::detail::input_adapter
+input_adapter	include/json.hpp	/^    input_adapter(IteratorType first, IteratorType last)$/;"	f	class:nlohmann::detail::input_adapter
+input_adapter	include/json.hpp	/^    input_adapter(T (&array)[N])$/;"	f	class:nlohmann::detail::input_adapter
+input_adapter	include/json.hpp	/^    input_adapter(const ContiguousContainer& c)$/;"	f	class:nlohmann::detail::input_adapter
+input_adapter	include/json.hpp	/^    input_adapter(std::istream& i)$/;"	f	class:nlohmann::detail::input_adapter
+input_adapter	include/json.hpp	/^    input_adapter(std::istream&& i)$/;"	f	class:nlohmann::detail::input_adapter
+input_adapter	include/json.hpp	/^class input_adapter$/;"	c	namespace:nlohmann::detail
+input_adapter_protocol	include/json.hpp	/^struct input_adapter_protocol$/;"	s	namespace:nlohmann::detail
+input_adapter_t	include/json.hpp	/^using input_adapter_t = std::shared_ptr<input_adapter_protocol>;$/;"	t	namespace:nlohmann::detail	typeref:typename:std::shared_ptr<input_adapter_protocol>
+input_buffer_adapter	include/json.hpp	/^    input_buffer_adapter(const char* b, const std::size_t l)$/;"	f	class:nlohmann::detail::input_buffer_adapter
+input_buffer_adapter	include/json.hpp	/^class input_buffer_adapter : public input_adapter_protocol$/;"	c	namespace:nlohmann::detail
+input_stream_adapter	include/json.hpp	/^    explicit input_stream_adapter(std::istream& i)$/;"	f	class:nlohmann::detail::input_stream_adapter
+input_stream_adapter	include/json.hpp	/^class input_stream_adapter : public input_adapter_protocol$/;"	c	namespace:nlohmann::detail
+insert	include/json.hpp	/^    iterator insert(const_iterator pos, basic_json&& val)$/;"	f	class:nlohmann::basic_json	typeref:typename:iterator
+insert	include/json.hpp	/^    iterator insert(const_iterator pos, const basic_json& val)$/;"	f	class:nlohmann::basic_json	typeref:typename:iterator
+insert	include/json.hpp	/^    iterator insert(const_iterator pos, const_iterator first, const_iterator last)$/;"	f	class:nlohmann::basic_json	typeref:typename:iterator
+insert	include/json.hpp	/^    iterator insert(const_iterator pos, initializer_list_t ilist)$/;"	f	class:nlohmann::basic_json	typeref:typename:iterator
+insert	include/json.hpp	/^    iterator insert(const_iterator pos, size_type cnt, const basic_json& val)$/;"	f	class:nlohmann::basic_json	typeref:typename:iterator
+insert	include/json.hpp	/^    void insert(const_iterator first, const_iterator last)$/;"	f	class:nlohmann::basic_json	typeref:typename:void
+internal_iterator	include/json.hpp	/^    using internal_iterator = ::nlohmann::detail::internal_iterator<BasicJsonType>;$/;"	t	class:nlohmann::basic_json	typeref:typename:::nlohmann::detail::internal_iterator<BasicJsonType>
+internal_iterator	include/json.hpp	/^template<typename BasicJsonType> struct internal_iterator$/;"	s	namespace:nlohmann::detail
+invalid	include/json.hpp	/^        enum class patch_operations {add, remove, replace, move, copy, test, invalid};$/;"	e	enum:nlohmann::basic_json::patch::patch_operations
+invalid_iterator	include/json.hpp	/^    invalid_iterator(int id_, const char* what_arg)$/;"	f	class:nlohmann::detail::invalid_iterator
+invalid_iterator	include/json.hpp	/^    using invalid_iterator = detail::invalid_iterator;$/;"	t	class:nlohmann::basic_json	typeref:typename:detail::invalid_iterator
+invalid_iterator	include/json.hpp	/^class invalid_iterator : public exception$/;"	c	namespace:nlohmann::detail
+is	include/json.hpp	/^    std::istream& is;$/;"	m	class:nlohmann::detail::input_stream_adapter	typeref:typename:std::istream &
+is_array	include/json.hpp	/^    constexpr bool is_array() const noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:bool
+is_basic_json	include/json.hpp	/^struct is_basic_json<NLOHMANN_BASIC_JSON_TPL> : std::true_type {};$/;"	s	namespace:nlohmann::detail
+is_basic_json	include/json.hpp	/^template<typename> struct is_basic_json : std::false_type {};$/;"	s	namespace:nlohmann::detail
+is_basic_json_nested_type	include/json.hpp	/^struct is_basic_json_nested_type$/;"	s	namespace:nlohmann::detail
+is_begin	include/json.hpp	/^    constexpr bool is_begin() const noexcept$/;"	f	class:nlohmann::detail::primitive_iterator_t	typeref:typename:bool
+is_boolean	include/json.hpp	/^    constexpr bool is_boolean() const noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:bool
+is_compatible_array_type	include/json.hpp	/^struct is_compatible_array_type$/;"	s	namespace:nlohmann::detail
+is_compatible_complete_type	include/json.hpp	/^struct is_compatible_complete_type$/;"	s	namespace:nlohmann::detail
+is_compatible_integer_type	include/json.hpp	/^struct is_compatible_integer_type$/;"	s	namespace:nlohmann::detail
+is_compatible_integer_type_impl	include/json.hpp	/^struct is_compatible_integer_type_impl : std::false_type {};$/;"	s	namespace:nlohmann::detail
+is_compatible_integer_type_impl	include/json.hpp	/^struct is_compatible_integer_type_impl<true, RealIntegerType, CompatibleNumberIntegerType>$/;"	s	namespace:nlohmann::detail
+is_compatible_object_type	include/json.hpp	/^struct is_compatible_object_type$/;"	s	namespace:nlohmann::detail
+is_compatible_object_type_impl	include/json.hpp	/^struct is_compatible_object_type_impl : std::false_type {};$/;"	s	namespace:nlohmann::detail
+is_compatible_object_type_impl	include/json.hpp	/^struct is_compatible_object_type_impl<true, RealType, CompatibleObjectType>$/;"	s	namespace:nlohmann::detail
+is_compatible_type	include/json.hpp	/^struct is_compatible_type$/;"	s	namespace:nlohmann::detail
+is_complete_type	include/json.hpp	/^struct is_complete_type : std::false_type {};$/;"	s	namespace:nlohmann::detail
+is_complete_type	include/json.hpp	/^struct is_complete_type<T, decltype(void(sizeof(T)))> : std::true_type {};$/;"	s	namespace:nlohmann::detail
+is_discarded	include/json.hpp	/^    constexpr bool is_discarded() const noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:bool
+is_end	include/json.hpp	/^    constexpr bool is_end() const noexcept$/;"	f	class:nlohmann::detail::primitive_iterator_t	typeref:typename:bool
+is_little_endian	include/json.hpp	/^    const bool is_little_endian = binary_reader<BasicJsonType>::little_endianess();$/;"	m	class:nlohmann::detail::binary_writer	typeref:typename:const bool
+is_little_endian	include/json.hpp	/^    const bool is_little_endian = little_endianess();$/;"	m	class:nlohmann::detail::binary_reader	typeref:typename:const bool
+is_null	include/json.hpp	/^    constexpr bool is_null() const noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:bool
+is_number	include/json.hpp	/^    constexpr bool is_number() const noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:bool
+is_number_float	include/json.hpp	/^    constexpr bool is_number_float() const noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:bool
+is_number_integer	include/json.hpp	/^    constexpr bool is_number_integer() const noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:bool
+is_number_unsigned	include/json.hpp	/^    constexpr bool is_number_unsigned() const noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:bool
+is_object	include/json.hpp	/^    constexpr bool is_object() const noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:bool
+is_primitive	include/json.hpp	/^    constexpr bool is_primitive() const noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:bool
+is_root	include/json.hpp	/^    bool is_root() const$/;"	f	class:nlohmann::json_pointer	typeref:typename:bool
+is_rvalue	include/json.hpp	/^    const bool is_rvalue;$/;"	m	class:nlohmann::detail::json_ref	typeref:typename:const bool
+is_string	include/json.hpp	/^    constexpr bool is_string() const noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:bool
+is_structured	include/json.hpp	/^    constexpr bool is_structured() const noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:bool
+isfinite	include/json.hpp	/^        if (not std::isfinite(x))$/;"	m	class:nlohmann::detail::serializer::dump_float::std	typeref:typename:not	file:
+items	include/json.hpp	/^    iteration_proxy<const_iterator> items() const noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:iteration_proxy<const_iterator>
+items	include/json.hpp	/^    iteration_proxy<iterator> items() noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:iteration_proxy<iterator>
+iter_impl	include/json.hpp	/^    explicit iter_impl(pointer object) noexcept : m_object(object)$/;"	f	class:nlohmann::detail::iter_impl
+iter_impl	include/json.hpp	/^    iter_impl(const iter_impl<typename std::remove_const<BasicJsonType>::type>& other) noexcept$/;"	f	class:nlohmann::detail::iter_impl
+iter_impl	include/json.hpp	/^    using iter_impl = ::nlohmann::detail::iter_impl<BasicJsonType>;$/;"	t	class:nlohmann::basic_json	typeref:typename:::nlohmann::detail::iter_impl<BasicJsonType>
+iter_impl	include/json.hpp	/^class iter_impl$/;"	c	namespace:nlohmann::detail
+iteration_proxy	include/json.hpp	/^    explicit iteration_proxy(typename IteratorType::reference cont) noexcept$/;"	f	class:nlohmann::detail::iteration_proxy
+iteration_proxy	include/json.hpp	/^    using iteration_proxy = ::nlohmann::detail::iteration_proxy<Iterator>;$/;"	t	class:nlohmann::basic_json	typeref:typename:::nlohmann::detail::iteration_proxy<Iterator>
+iteration_proxy	include/json.hpp	/^template<typename IteratorType> class iteration_proxy$/;"	c	namespace:nlohmann::detail
+iteration_proxy_internal	include/json.hpp	/^        explicit iteration_proxy_internal(IteratorType it) noexcept : anchor(it) {}$/;"	f	class:nlohmann::detail::iteration_proxy::iteration_proxy_internal
+iteration_proxy_internal	include/json.hpp	/^    class iteration_proxy_internal$/;"	c	class:nlohmann::detail::iteration_proxy
+iterator	include/json.hpp	/^    using iterator = iter_impl<basic_json>;$/;"	t	class:nlohmann::basic_json	typeref:typename:iter_impl<basic_json>
+iterator_category	include/json.hpp	/^    using iterator_category = std::bidirectional_iterator_tag;$/;"	t	class:nlohmann::detail::iter_impl	typeref:typename:std::bidirectional_iterator_tag
+iterator_wrapper	include/json.hpp	/^    static iteration_proxy<const_iterator> iterator_wrapper(const_reference ref) noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:JSON_DEPRECATED iteration_proxy<const_iterator>
+iterator_wrapper	include/json.hpp	/^    static iteration_proxy<iterator> iterator_wrapper(reference ref) noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:JSON_DEPRECATED iteration_proxy<iterator>
+json	algorithms.cpp	/^using json= nlohmann::json;$/;"	t	typeref:typename:nlohmann::json	file:
+json	include/json.hpp	/^using json = basic_json<>;$/;"	t	namespace:nlohmann	typeref:typename:basic_json<>
+json	utilities.cpp	/^using json= nlohmann::json;$/;"	t	typeref:typename:nlohmann::json	file:
+json_pointer	include/json.hpp	/^    explicit json_pointer(const std::string& s = "")$/;"	f	class:nlohmann::json_pointer
+json_pointer	include/json.hpp	/^    using json_pointer = ::nlohmann::json_pointer<basic_json>;$/;"	t	class:nlohmann::basic_json	typeref:typename:::nlohmann::json_pointer<basic_json>
+json_pointer	include/json.hpp	/^class json_pointer$/;"	c	namespace:nlohmann
+json_ref	include/json.hpp	/^    json_ref(Args&& ... args)$/;"	f	class:nlohmann::detail::json_ref
+json_ref	include/json.hpp	/^    json_ref(const value_type& value)$/;"	f	class:nlohmann::detail::json_ref
+json_ref	include/json.hpp	/^    json_ref(std::initializer_list<json_ref> init)$/;"	f	class:nlohmann::detail::json_ref
+json_ref	include/json.hpp	/^    json_ref(value_type&& value)$/;"	f	class:nlohmann::detail::json_ref
+json_ref	include/json.hpp	/^class json_ref$/;"	c	namespace:nlohmann::detail
+json_reverse_iterator	include/json.hpp	/^    json_reverse_iterator(const base_iterator& it) noexcept : base_iterator(it) {}$/;"	f	class:nlohmann::detail::json_reverse_iterator
+json_reverse_iterator	include/json.hpp	/^    json_reverse_iterator(const typename base_iterator::iterator_type& it) noexcept$/;"	f	class:nlohmann::detail::json_reverse_iterator
+json_reverse_iterator	include/json.hpp	/^    template<typename Base> using json_reverse_iterator = ::nlohmann::detail::json_reverse_itera/;"	t	class:nlohmann::basic_json	typeref:typename:::nlohmann::detail::json_reverse_iterator<Base>
+json_reverse_iterator	include/json.hpp	/^class json_reverse_iterator : public std::reverse_iterator<Base>$/;"	c	namespace:nlohmann::detail
+json_serializer	include/json.hpp	/^    using json_serializer = JSONSerializer<T, SFINAE>;$/;"	t	class:nlohmann::basic_json	typeref:typename:JSONSerializer<T,SFINAE>
+json_value	include/json.hpp	/^        json_value(array_t&& value)$/;"	f	union:nlohmann::basic_json::json_value
+json_value	include/json.hpp	/^        json_value(boolean_t v) noexcept : boolean(v) {}$/;"	f	union:nlohmann::basic_json::json_value
+json_value	include/json.hpp	/^        json_value(const array_t& value)$/;"	f	union:nlohmann::basic_json::json_value
+json_value	include/json.hpp	/^        json_value(const object_t& value)$/;"	f	union:nlohmann::basic_json::json_value
+json_value	include/json.hpp	/^        json_value(const string_t& value)$/;"	f	union:nlohmann::basic_json::json_value
+json_value	include/json.hpp	/^        json_value(number_float_t v) noexcept : number_float(v) {}$/;"	f	union:nlohmann::basic_json::json_value
+json_value	include/json.hpp	/^        json_value(number_integer_t v) noexcept : number_integer(v) {}$/;"	f	union:nlohmann::basic_json::json_value
+json_value	include/json.hpp	/^        json_value(number_unsigned_t v) noexcept : number_unsigned(v) {}$/;"	f	union:nlohmann::basic_json::json_value
+json_value	include/json.hpp	/^        json_value(object_t&& value)$/;"	f	union:nlohmann::basic_json::json_value
+json_value	include/json.hpp	/^        json_value(string_t&& value)$/;"	f	union:nlohmann::basic_json::json_value
+json_value	include/json.hpp	/^        json_value(value_t t)$/;"	f	union:nlohmann::basic_json::json_value
+json_value	include/json.hpp	/^    union json_value$/;"	u	class:nlohmann::basic_json
+k	include/json.hpp	/^    int k;$/;"	m	struct:nlohmann::detail::dtoa_impl::cached_power	typeref:typename:int
+kAlpha	include/json.hpp	/^constexpr int kAlpha = -60;$/;"	v	namespace:nlohmann::detail::dtoa_impl	typeref:typename:int
+kGamma	include/json.hpp	/^constexpr int kGamma = -32;$/;"	v	namespace:nlohmann::detail::dtoa_impl	typeref:typename:int
+kPrecision	include/json.hpp	/^    static constexpr int kPrecision = 64; \/\/ = q$/;"	m	struct:nlohmann::detail::dtoa_impl::diyfp	typeref:typename:int
+key	include/json.hpp	/^        key,$/;"	e	enum:nlohmann::detail::parser::parse_event_t
+key	include/json.hpp	/^        std::string key() const$/;"	f	class:nlohmann::detail::iteration_proxy::iteration_proxy_internal	typeref:typename:std::string
+key	include/json.hpp	/^    auto key() const -> decltype(std::declval<Base>().key())$/;"	f	class:nlohmann::detail::json_reverse_iterator	typeref:typename:decltype (std::declval<Base> ().key ())
+key	include/json.hpp	/^    typename object_t::key_type key() const$/;"	f	class:nlohmann::detail::iter_impl	typeref:typename:object_t::key_type
+last_token	include/json.hpp	/^    token_type last_token = token_type::uninitialized;$/;"	m	class:nlohmann::detail::parser	typeref:typename:token_type
+length	include/site.hpp	/^	int length;$/;"	m	struct:site	typeref:typename:int
+less	include/json.hpp	/^struct less< ::nlohmann::detail::value_t>$/;"	s	namespace:std
+lexer	include/json.hpp	/^    explicit lexer(detail::input_adapter_t adapter)$/;"	f	class:nlohmann::detail::lexer
+lexer	include/json.hpp	/^    using lexer = ::nlohmann::detail::lexer<basic_json>;$/;"	t	class:nlohmann::basic_json	typeref:typename:::nlohmann::detail::lexer<basic_json>
+lexer	include/json.hpp	/^class lexer$/;"	c	namespace:nlohmann::detail
+lexer_t	include/json.hpp	/^    using lexer_t = lexer<BasicJsonType>;$/;"	t	class:nlohmann::detail::parser	typeref:typename:lexer<BasicJsonType>
+limit	include/json.hpp	/^    const char* limit;$/;"	m	class:nlohmann::detail::input_buffer_adapter	typeref:typename:const char *
+literal_false	include/json.hpp	/^        literal_false,    \/\/\/< the `false` literal$/;"	e	enum:nlohmann::detail::lexer::token_type
+literal_null	include/json.hpp	/^        literal_null,     \/\/\/< the `null` literal$/;"	e	enum:nlohmann::detail::lexer::token_type
+literal_or_value	include/json.hpp	/^        literal_or_value  \/\/\/< a literal or the begin of a value (only for diagnostics)$/;"	e	enum:nlohmann::detail::lexer::token_type
+literal_true	include/json.hpp	/^        literal_true,     \/\/\/< the `true` literal$/;"	e	enum:nlohmann::detail::lexer::token_type
+little_endianess	include/json.hpp	/^    static constexpr bool little_endianess(int num = 1) noexcept$/;"	f	class:nlohmann::detail::binary_reader	typeref:typename:bool
+loc	include/json.hpp	/^    const std::lconv* loc = nullptr;$/;"	m	class:nlohmann::detail::serializer	typeref:typename:const std::lconv *
+logMessages	utilities.cpp	/^inline void logMessages(int code)$/;"	f	typeref:typename:void
+logNewEntry	utilities.cpp	/^inline void logNewEntry(site s)$/;"	f	typeref:typename:void
+longpw	algorithms.cpp	/^void longpw(site info)$/;"	f	typeref:typename:void
+m	include/json.hpp	/^    std::runtime_error m;$/;"	m	class:nlohmann::detail::exception	typeref:typename:std::runtime_error
+m_it	include/json.hpp	/^    difference_type m_it = (std::numeric_limits<std::ptrdiff_t>::min)();$/;"	m	class:nlohmann::detail::primitive_iterator_t	typeref:typename:difference_type
+m_it	include/json.hpp	/^    internal_iterator<typename std::remove_const<BasicJsonType>::type> m_it;$/;"	m	class:nlohmann::detail::iter_impl	typeref:typename:internal_iterator<typename std::remove_const<BasicJsonType>::type>
+m_lexer	include/json.hpp	/^    lexer_t m_lexer;$/;"	m	class:nlohmann::detail::parser	typeref:typename:lexer_t
+m_object	include/json.hpp	/^    pointer m_object = nullptr;$/;"	m	class:nlohmann::detail::iter_impl	typeref:typename:pointer
+m_type	include/json.hpp	/^    value_t m_type = value_t::null;$/;"	m	class:nlohmann::basic_json	typeref:typename:value_t
+main	main.cpp	/^int main(int argc, char * argv[])$/;"	f	typeref:typename:int
+make_index_sequence	include/json.hpp	/^struct make_index_sequence$/;"	s	namespace:nlohmann::detail
+make_index_sequence	include/json.hpp	/^template<> struct make_index_sequence<0> : index_sequence<> {};$/;"	s	namespace:nlohmann::detail
+make_index_sequence	include/json.hpp	/^template<> struct make_index_sequence<1> : index_sequence<0> {};$/;"	s	namespace:nlohmann::detail
+max_size	include/json.hpp	/^    size_type max_size() const noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:size_type
+merge_patch	include/json.hpp	/^    void merge_patch(const basic_json& patch)$/;"	f	class:nlohmann::basic_json	typeref:typename:void
+meta	include/json.hpp	/^    static basic_json meta()$/;"	f	class:nlohmann::basic_json	typeref:typename:basic_json
+minus	include/json.hpp	/^    diyfp minus;$/;"	m	struct:nlohmann::detail::dtoa_impl::boundaries	typeref:typename:diyfp
+move	include/json.hpp	/^        enum class patch_operations {add, remove, replace, move, copy, test, invalid};$/;"	e	enum:nlohmann::basic_json::patch::patch_operations
+move_string	include/json.hpp	/^    std::string move_string()$/;"	f	class:nlohmann::detail::lexer	typeref:typename:std::string
+moved_or_copied	include/json.hpp	/^    value_type moved_or_copied() const$/;"	f	class:nlohmann::detail::json_ref	typeref:typename:value_type
+mul	include/json.hpp	/^    static diyfp mul(const diyfp& x, const diyfp& y) noexcept$/;"	f	struct:nlohmann::detail::dtoa_impl::diyfp	typeref:typename:diyfp
+name	include/json.hpp	/^    static std::string name(const std::string& ename, int id_)$/;"	f	class:nlohmann::detail::exception	typeref:typename:std::string
+name_separator	include/json.hpp	/^        name_separator,   \/\/\/< the name separator `:`$/;"	e	enum:nlohmann::detail::lexer::token_type
+negation	include/json.hpp	/^template<class B> struct negation : std::integral_constant<bool, not B::value> {};$/;"	s	namespace:nlohmann::detail
+next_byte_in_range	include/json.hpp	/^    bool next_byte_in_range(std::initializer_list<int> ranges)$/;"	f	class:nlohmann::detail::lexer	typeref:typename:bool
+nlohmann	include/json.hpp	/^namespace nlohmann$/;"	n
+normalize	include/json.hpp	/^    static diyfp normalize(diyfp x) noexcept$/;"	f	struct:nlohmann::detail::dtoa_impl::diyfp	typeref:typename:diyfp
+normalize_to	include/json.hpp	/^    static diyfp normalize_to(const diyfp& x, const int target_exponent) noexcept$/;"	f	struct:nlohmann::detail::dtoa_impl::diyfp	typeref:typename:diyfp
+notes	include/site.hpp	/^	std::string uname, website, notes, illegal, password, email;$/;"	m	struct:site	typeref:typename:std::string
+null	include/json.hpp	/^    null,             \/\/\/< null value$/;"	e	enum:nlohmann::detail::value_t
+number_buffer	include/json.hpp	/^    std::array<char, 64> number_buffer{{}};$/;"	m	class:nlohmann::detail::serializer	typeref:typename:std::array<char,64>
+number_float	include/json.hpp	/^        number_float_t number_float;$/;"	m	union:nlohmann::basic_json::json_value	typeref:typename:number_float_t
+number_float	include/json.hpp	/^    number_float,     \/\/\/< number value (floating-point)$/;"	e	enum:nlohmann::detail::value_t
+number_float_t	include/json.hpp	/^    using number_float_t = NumberFloatType;$/;"	t	class:nlohmann::basic_json	typeref:typename:NumberFloatType
+number_float_t	include/json.hpp	/^    using number_float_t = typename BasicJsonType::number_float_t;$/;"	t	class:nlohmann::detail::lexer	typeref:typename:BasicJsonType::number_float_t
+number_float_t	include/json.hpp	/^    using number_float_t = typename BasicJsonType::number_float_t;$/;"	t	class:nlohmann::detail::parser	typeref:typename:BasicJsonType::number_float_t
+number_float_t	include/json.hpp	/^    using number_float_t = typename BasicJsonType::number_float_t;$/;"	t	class:nlohmann::detail::serializer	typeref:typename:BasicJsonType::number_float_t
+number_integer	include/json.hpp	/^        number_integer_t number_integer;$/;"	m	union:nlohmann::basic_json::json_value	typeref:typename:number_integer_t
+number_integer	include/json.hpp	/^    number_integer,   \/\/\/< number value (signed integer)$/;"	e	enum:nlohmann::detail::value_t
+number_integer_t	include/json.hpp	/^    using number_integer_t = NumberIntegerType;$/;"	t	class:nlohmann::basic_json	typeref:typename:NumberIntegerType
+number_integer_t	include/json.hpp	/^    using number_integer_t = typename BasicJsonType::number_integer_t;$/;"	t	class:nlohmann::detail::binary_reader	typeref:typename:BasicJsonType::number_integer_t
+number_integer_t	include/json.hpp	/^    using number_integer_t = typename BasicJsonType::number_integer_t;$/;"	t	class:nlohmann::detail::lexer	typeref:typename:BasicJsonType::number_integer_t
+number_integer_t	include/json.hpp	/^    using number_integer_t = typename BasicJsonType::number_integer_t;$/;"	t	class:nlohmann::detail::parser	typeref:typename:BasicJsonType::number_integer_t
+number_integer_t	include/json.hpp	/^    using number_integer_t = typename BasicJsonType::number_integer_t;$/;"	t	class:nlohmann::detail::serializer	typeref:typename:BasicJsonType::number_integer_t
+number_unsigned	include/json.hpp	/^        number_unsigned_t number_unsigned;$/;"	m	union:nlohmann::basic_json::json_value	typeref:typename:number_unsigned_t
+number_unsigned	include/json.hpp	/^    number_unsigned,  \/\/\/< number value (unsigned integer)$/;"	e	enum:nlohmann::detail::value_t
+number_unsigned_t	include/json.hpp	/^    using number_unsigned_t = NumberUnsignedType;$/;"	t	class:nlohmann::basic_json	typeref:typename:NumberUnsignedType
+number_unsigned_t	include/json.hpp	/^    using number_unsigned_t = typename BasicJsonType::number_unsigned_t;$/;"	t	class:nlohmann::detail::binary_reader	typeref:typename:BasicJsonType::number_unsigned_t
+number_unsigned_t	include/json.hpp	/^    using number_unsigned_t = typename BasicJsonType::number_unsigned_t;$/;"	t	class:nlohmann::detail::lexer	typeref:typename:BasicJsonType::number_unsigned_t
+number_unsigned_t	include/json.hpp	/^    using number_unsigned_t = typename BasicJsonType::number_unsigned_t;$/;"	t	class:nlohmann::detail::parser	typeref:typename:BasicJsonType::number_unsigned_t
+number_unsigned_t	include/json.hpp	/^    using number_unsigned_t = typename BasicJsonType::number_unsigned_t;$/;"	t	class:nlohmann::detail::serializer	typeref:typename:BasicJsonType::number_unsigned_t
+o	include/json.hpp	/^    output_adapter_t<char> o = nullptr;$/;"	m	class:nlohmann::detail::serializer	typeref:typename:output_adapter_t<char>
+oa	include/json.hpp	/^    output_adapter_t<CharType> oa = nullptr;$/;"	m	class:nlohmann::detail::binary_writer	typeref:typename:output_adapter_t<CharType>
+oa	include/json.hpp	/^    output_adapter_t<CharType> oa = nullptr;$/;"	m	class:nlohmann::detail::output_adapter	typeref:typename:output_adapter_t<CharType>
+object	include/json.hpp	/^        object_t* object;$/;"	m	union:nlohmann::basic_json::json_value	typeref:typename:object_t *
+object	include/json.hpp	/^    object,           \/\/\/< object (unordered set of name\/value pairs)$/;"	e	enum:nlohmann::detail::value_t
+object	include/json.hpp	/^    static basic_json object(initializer_list_t init = {})$/;"	f	class:nlohmann::basic_json	typeref:typename:basic_json
+object_comparator_t	include/json.hpp	/^    using object_comparator_t = std::less<>;$/;"	t	class:nlohmann::basic_json	typeref:typename:std::less<>
+object_comparator_t	include/json.hpp	/^    using object_comparator_t = std::less<StringType>;$/;"	t	class:nlohmann::basic_json	typeref:typename:std::less<StringType>
+object_end	include/json.hpp	/^        object_end,$/;"	e	enum:nlohmann::detail::parser::parse_event_t
+object_iterator	include/json.hpp	/^    typename BasicJsonType::object_t::iterator object_iterator {};$/;"	m	struct:nlohmann::detail::internal_iterator	typeref:typename:BasicJsonType::object_t::iterator
+object_start	include/json.hpp	/^        object_start,$/;"	e	enum:nlohmann::detail::parser::parse_event_t
+object_t	include/json.hpp	/^    using object_t = ObjectType<StringType,$/;"	t	class:nlohmann::basic_json	typeref:typename:ObjectType<StringType,basic_json,object_comparator_t,AllocatorType<std::pair<const StringType,basic_json>>>
+object_t	include/json.hpp	/^    using object_t = typename BasicJsonType::object_t;$/;"	t	class:nlohmann::detail::iter_impl	typeref:typename:BasicJsonType::object_t
+operator !=	include/json.hpp	/^        bool operator!=(const iteration_proxy_internal& o) const noexcept$/;"	f	class:nlohmann::detail::iteration_proxy::iteration_proxy_internal	typeref:typename:bool
+operator !=	include/json.hpp	/^    bool operator!=(const iter_impl& other) const$/;"	f	class:nlohmann::detail::iter_impl	typeref:typename:bool
+operator !=	include/json.hpp	/^    friend bool operator!=(const ScalarType lhs, const_reference rhs) noexcept$/;"	f	namespace:nlohmann	typeref:typename:bool
+operator !=	include/json.hpp	/^    friend bool operator!=(const_reference lhs, const ScalarType rhs) noexcept$/;"	f	namespace:nlohmann	typeref:typename:bool
+operator !=	include/json.hpp	/^    friend bool operator!=(const_reference lhs, const_reference rhs) noexcept$/;"	f	namespace:nlohmann	typeref:typename:bool
+operator !=	include/json.hpp	/^    friend bool operator!=(json_pointer const& lhs,$/;"	f	namespace:nlohmann	typeref:typename:bool
+operator ()	include/json.hpp	/^    bool operator()(nlohmann::detail::value_t lhs,$/;"	f	struct:std::less	typeref:typename:bool
+operator ()	include/json.hpp	/^    std::size_t operator()(const nlohmann::json& j) const$/;"	f	struct:std::hash	typeref:typename:std::size_t
+operator ()	include/json.hpp	/^    void operator()(BasicJsonType& j, T&& val) const$/;"	f	struct:nlohmann::detail::to_json_fn	typeref:typename:void
+operator ()	include/json.hpp	/^    void operator()(const BasicJsonType& j, T& val) const$/;"	f	struct:nlohmann::detail::from_json_fn	typeref:typename:void
+operator *	include/json.hpp	/^        iteration_proxy_internal& operator*()$/;"	f	class:nlohmann::detail::iteration_proxy::iteration_proxy_internal	typeref:typename:iteration_proxy_internal &
+operator *	include/json.hpp	/^    reference operator*() const$/;"	f	class:nlohmann::detail::iter_impl	typeref:typename:reference
+operator *	include/json.hpp	/^    value_type const& operator*() const$/;"	f	class:nlohmann::detail::json_ref	typeref:typename:value_type const &
+operator +	include/json.hpp	/^    friend iter_impl operator+(difference_type i, const iter_impl& it)$/;"	f	namespace:nlohmann::detail	typeref:typename:iter_impl
+operator +	include/json.hpp	/^    iter_impl operator+(difference_type i) const$/;"	f	class:nlohmann::detail::iter_impl	typeref:typename:iter_impl
+operator +	include/json.hpp	/^    json_reverse_iterator operator+(difference_type i) const$/;"	f	class:nlohmann::detail::json_reverse_iterator	typeref:typename:json_reverse_iterator
+operator +	include/json.hpp	/^    primitive_iterator_t operator+(difference_type n) noexcept$/;"	f	class:nlohmann::detail::primitive_iterator_t	typeref:typename:primitive_iterator_t
+operator ++	include/json.hpp	/^        iteration_proxy_internal& operator++()$/;"	f	class:nlohmann::detail::iteration_proxy::iteration_proxy_internal	typeref:typename:iteration_proxy_internal &
+operator ++	include/json.hpp	/^    iter_impl const operator++(int)$/;"	f	class:nlohmann::detail::iter_impl	typeref:typename:iter_impl const
+operator ++	include/json.hpp	/^    iter_impl& operator++()$/;"	f	class:nlohmann::detail::iter_impl	typeref:typename:iter_impl &
+operator ++	include/json.hpp	/^    json_reverse_iterator const operator++(int)$/;"	f	class:nlohmann::detail::json_reverse_iterator	typeref:typename:json_reverse_iterator const
+operator ++	include/json.hpp	/^    json_reverse_iterator& operator++()$/;"	f	class:nlohmann::detail::json_reverse_iterator	typeref:typename:json_reverse_iterator &
+operator ++	include/json.hpp	/^    primitive_iterator_t const operator++(int) noexcept$/;"	f	class:nlohmann::detail::primitive_iterator_t	typeref:typename:primitive_iterator_t const
+operator ++	include/json.hpp	/^    primitive_iterator_t& operator++() noexcept$/;"	f	class:nlohmann::detail::primitive_iterator_t	typeref:typename:primitive_iterator_t &
+operator +=	include/json.hpp	/^    iter_impl& operator+=(difference_type i)$/;"	f	class:nlohmann::detail::iter_impl	typeref:typename:iter_impl &
+operator +=	include/json.hpp	/^    json_reverse_iterator& operator+=(difference_type i)$/;"	f	class:nlohmann::detail::json_reverse_iterator	typeref:typename:json_reverse_iterator &
+operator +=	include/json.hpp	/^    primitive_iterator_t& operator+=(difference_type n) noexcept$/;"	f	class:nlohmann::detail::primitive_iterator_t	typeref:typename:primitive_iterator_t &
+operator +=	include/json.hpp	/^    reference operator+=(basic_json&& val)$/;"	f	class:nlohmann::basic_json	typeref:typename:reference
+operator +=	include/json.hpp	/^    reference operator+=(const basic_json& val)$/;"	f	class:nlohmann::basic_json	typeref:typename:reference
+operator +=	include/json.hpp	/^    reference operator+=(const typename object_t::value_type& val)$/;"	f	class:nlohmann::basic_json	typeref:typename:reference
+operator +=	include/json.hpp	/^    reference operator+=(initializer_list_t init)$/;"	f	class:nlohmann::basic_json	typeref:typename:reference
+operator -	include/json.hpp	/^    difference_type operator-(const iter_impl& other) const$/;"	f	class:nlohmann::detail::iter_impl	typeref:typename:difference_type
+operator -	include/json.hpp	/^    difference_type operator-(const json_reverse_iterator& other) const$/;"	f	class:nlohmann::detail::json_reverse_iterator	typeref:typename:difference_type
+operator -	include/json.hpp	/^    friend constexpr difference_type operator-(primitive_iterator_t lhs, primitive_iterator_t rh/;"	f	namespace:nlohmann::detail	typeref:typename:difference_type
+operator -	include/json.hpp	/^    iter_impl operator-(difference_type i) const$/;"	f	class:nlohmann::detail::iter_impl	typeref:typename:iter_impl
+operator -	include/json.hpp	/^    json_reverse_iterator operator-(difference_type i) const$/;"	f	class:nlohmann::detail::json_reverse_iterator	typeref:typename:json_reverse_iterator
+operator --	include/json.hpp	/^    iter_impl const operator--(int)$/;"	f	class:nlohmann::detail::iter_impl	typeref:typename:iter_impl const
+operator --	include/json.hpp	/^    iter_impl& operator--()$/;"	f	class:nlohmann::detail::iter_impl	typeref:typename:iter_impl &
+operator --	include/json.hpp	/^    json_reverse_iterator const operator--(int)$/;"	f	class:nlohmann::detail::json_reverse_iterator	typeref:typename:json_reverse_iterator const
+operator --	include/json.hpp	/^    json_reverse_iterator& operator--()$/;"	f	class:nlohmann::detail::json_reverse_iterator	typeref:typename:json_reverse_iterator &
+operator --	include/json.hpp	/^    primitive_iterator_t const operator--(int) noexcept$/;"	f	class:nlohmann::detail::primitive_iterator_t	typeref:typename:primitive_iterator_t const
+operator --	include/json.hpp	/^    primitive_iterator_t& operator--() noexcept$/;"	f	class:nlohmann::detail::primitive_iterator_t	typeref:typename:primitive_iterator_t &
+operator -=	include/json.hpp	/^    iter_impl& operator-=(difference_type i)$/;"	f	class:nlohmann::detail::iter_impl	typeref:typename:iter_impl &
+operator -=	include/json.hpp	/^    primitive_iterator_t& operator-=(difference_type n) noexcept$/;"	f	class:nlohmann::detail::primitive_iterator_t	typeref:typename:primitive_iterator_t &
+operator ->	include/json.hpp	/^    pointer operator->() const$/;"	f	class:nlohmann::detail::iter_impl	typeref:typename:pointer
+operator ->	include/json.hpp	/^    value_type const* operator->() const$/;"	f	class:nlohmann::detail::json_ref	typeref:typename:value_type const *
+operator <	include/json.hpp	/^    bool operator<(const iter_impl& other) const$/;"	f	class:nlohmann::detail::iter_impl	typeref:typename:bool
+operator <	include/json.hpp	/^    friend bool operator<(const ScalarType lhs, const_reference rhs) noexcept$/;"	f	namespace:nlohmann	typeref:typename:bool
+operator <	include/json.hpp	/^    friend bool operator<(const_reference lhs, const ScalarType rhs) noexcept$/;"	f	namespace:nlohmann	typeref:typename:bool
+operator <	include/json.hpp	/^    friend bool operator<(const_reference lhs, const_reference rhs) noexcept$/;"	f	namespace:nlohmann	typeref:typename:bool
+operator <	include/json.hpp	/^    friend constexpr bool operator<(primitive_iterator_t lhs, primitive_iterator_t rhs) noexcept$/;"	f	namespace:nlohmann::detail	typeref:typename:bool
+operator <	include/json.hpp	/^inline bool operator<(const value_t lhs, const value_t rhs) noexcept$/;"	f	namespace:nlohmann::detail	typeref:typename:bool
+operator <<	include/json.hpp	/^    friend std::istream& operator<<(basic_json& j, std::istream& i)$/;"	f	namespace:nlohmann	typeref:typename:JSON_DEPRECATED std::istream &
+operator <<	include/json.hpp	/^    friend std::ostream& operator<<(std::ostream& o, const basic_json& j)$/;"	f	namespace:nlohmann	typeref:typename:std::ostream &
+operator <=	include/json.hpp	/^    bool operator<=(const iter_impl& other) const$/;"	f	class:nlohmann::detail::iter_impl	typeref:typename:bool
+operator <=	include/json.hpp	/^    friend bool operator<=(const ScalarType lhs, const_reference rhs) noexcept$/;"	f	namespace:nlohmann	typeref:typename:bool
+operator <=	include/json.hpp	/^    friend bool operator<=(const_reference lhs, const ScalarType rhs) noexcept$/;"	f	namespace:nlohmann	typeref:typename:bool
+operator <=	include/json.hpp	/^    friend bool operator<=(const_reference lhs, const_reference rhs) noexcept$/;"	f	namespace:nlohmann	typeref:typename:bool
+operator =	include/json.hpp	/^    iter_impl& operator=(const iter_impl<typename std::remove_const<BasicJsonType>::type>& other/;"	f	class:nlohmann::detail::iter_impl	typeref:typename:iter_impl &
+operator =	include/json.hpp	/^    reference& operator=(basic_json other) noexcept ($/;"	f	class:nlohmann::basic_json	typeref:typename:reference &
+operator ==	include/json.hpp	/^    bool operator==(const iter_impl& other) const$/;"	f	class:nlohmann::detail::iter_impl	typeref:typename:bool
+operator ==	include/json.hpp	/^    friend bool operator==(const ScalarType lhs, const_reference rhs) noexcept$/;"	f	namespace:nlohmann	typeref:typename:bool
+operator ==	include/json.hpp	/^    friend bool operator==(const_reference lhs, const ScalarType rhs) noexcept$/;"	f	namespace:nlohmann	typeref:typename:bool
+operator ==	include/json.hpp	/^    friend bool operator==(const_reference lhs, const_reference rhs) noexcept$/;"	f	namespace:nlohmann	typeref:typename:bool
+operator ==	include/json.hpp	/^    friend bool operator==(json_pointer const& lhs,$/;"	f	namespace:nlohmann	typeref:typename:bool
+operator ==	include/json.hpp	/^    friend constexpr bool operator==(primitive_iterator_t lhs, primitive_iterator_t rhs) noexcep/;"	f	namespace:nlohmann::detail	typeref:typename:bool
+operator >	include/json.hpp	/^    bool operator>(const iter_impl& other) const$/;"	f	class:nlohmann::detail::iter_impl	typeref:typename:bool
+operator >	include/json.hpp	/^    friend bool operator>(const ScalarType lhs, const_reference rhs) noexcept$/;"	f	namespace:nlohmann	typeref:typename:bool
+operator >	include/json.hpp	/^    friend bool operator>(const_reference lhs, const ScalarType rhs) noexcept$/;"	f	namespace:nlohmann	typeref:typename:bool
+operator >	include/json.hpp	/^    friend bool operator>(const_reference lhs, const_reference rhs) noexcept$/;"	f	namespace:nlohmann	typeref:typename:bool
+operator >=	include/json.hpp	/^    bool operator>=(const iter_impl& other) const$/;"	f	class:nlohmann::detail::iter_impl	typeref:typename:bool
+operator >=	include/json.hpp	/^    friend bool operator>=(const ScalarType lhs, const_reference rhs) noexcept$/;"	f	namespace:nlohmann	typeref:typename:bool
+operator >=	include/json.hpp	/^    friend bool operator>=(const_reference lhs, const ScalarType rhs) noexcept$/;"	f	namespace:nlohmann	typeref:typename:bool
+operator >=	include/json.hpp	/^    friend bool operator>=(const_reference lhs, const_reference rhs) noexcept$/;"	f	namespace:nlohmann	typeref:typename:bool
+operator >>	include/json.hpp	/^    friend std::istream& operator>>(std::istream& i, basic_json& j)$/;"	f	namespace:nlohmann	typeref:typename:std::istream &
+operator >>	include/json.hpp	/^    friend std::ostream& operator>>(const basic_json& j, std::ostream& o)$/;"	f	namespace:nlohmann	typeref:typename:JSON_DEPRECATED std::ostream &
+operator []	include/json.hpp	/^    const_reference operator[](T* key) const$/;"	f	class:nlohmann::basic_json	typeref:typename:const_reference
+operator []	include/json.hpp	/^    const_reference operator[](const json_pointer& ptr) const$/;"	f	class:nlohmann::basic_json	typeref:typename:const_reference
+operator []	include/json.hpp	/^    const_reference operator[](const typename object_t::key_type& key) const$/;"	f	class:nlohmann::basic_json	typeref:typename:const_reference
+operator []	include/json.hpp	/^    const_reference operator[](size_type idx) const$/;"	f	class:nlohmann::basic_json	typeref:typename:const_reference
+operator []	include/json.hpp	/^    reference operator[](T* key)$/;"	f	class:nlohmann::basic_json	typeref:typename:reference
+operator []	include/json.hpp	/^    reference operator[](const json_pointer& ptr)$/;"	f	class:nlohmann::basic_json	typeref:typename:reference
+operator []	include/json.hpp	/^    reference operator[](const typename object_t::key_type& key)$/;"	f	class:nlohmann::basic_json	typeref:typename:reference
+operator []	include/json.hpp	/^    reference operator[](difference_type n) const$/;"	f	class:nlohmann::detail::iter_impl	typeref:typename:reference
+operator []	include/json.hpp	/^    reference operator[](difference_type n) const$/;"	f	class:nlohmann::detail::json_reverse_iterator	typeref:typename:reference
+operator []	include/json.hpp	/^    reference operator[](size_type idx)$/;"	f	class:nlohmann::basic_json	typeref:typename:reference
+other_array_t	include/json.hpp	/^        using other_array_t = typename BasicJsonType::array_t;$/;"	t	function:nlohmann::basic_json::basic_json	typeref:typename:BasicJsonType::array_t
+other_boolean_t	include/json.hpp	/^        using other_boolean_t = typename BasicJsonType::boolean_t;$/;"	t	function:nlohmann::basic_json::basic_json	typeref:typename:BasicJsonType::boolean_t
+other_error	include/json.hpp	/^    other_error(int id_, const char* what_arg) : exception(id_, what_arg) {}$/;"	f	class:nlohmann::detail::other_error
+other_error	include/json.hpp	/^    using other_error = detail::other_error;$/;"	t	class:nlohmann::basic_json	typeref:typename:detail::other_error
+other_error	include/json.hpp	/^class other_error : public exception$/;"	c	namespace:nlohmann::detail
+other_number_float_t	include/json.hpp	/^        using other_number_float_t = typename BasicJsonType::number_float_t;$/;"	t	function:nlohmann::basic_json::basic_json	typeref:typename:BasicJsonType::number_float_t
+other_number_integer_t	include/json.hpp	/^        using other_number_integer_t = typename BasicJsonType::number_integer_t;$/;"	t	function:nlohmann::basic_json::basic_json	typeref:typename:BasicJsonType::number_integer_t
+other_number_unsigned_t	include/json.hpp	/^        using other_number_unsigned_t = typename BasicJsonType::number_unsigned_t;$/;"	t	function:nlohmann::basic_json::basic_json	typeref:typename:BasicJsonType::number_unsigned_t
+other_object_t	include/json.hpp	/^        using other_object_t = typename BasicJsonType::object_t;$/;"	t	function:nlohmann::basic_json::basic_json	typeref:typename:BasicJsonType::object_t
+other_string_t	include/json.hpp	/^        using other_string_t = typename BasicJsonType::string_t;$/;"	t	function:nlohmann::basic_json::basic_json	typeref:typename:BasicJsonType::string_t
+out_of_range	include/json.hpp	/^    out_of_range(int id_, const char* what_arg) : exception(id_, what_arg) {}$/;"	f	class:nlohmann::detail::out_of_range
+out_of_range	include/json.hpp	/^    using out_of_range = detail::out_of_range;$/;"	t	class:nlohmann::basic_json	typeref:typename:detail::out_of_range
+out_of_range	include/json.hpp	/^class out_of_range : public exception$/;"	c	namespace:nlohmann::detail
+output_adapter	include/json.hpp	/^    output_adapter(std::basic_ostream<CharType>& s)$/;"	f	class:nlohmann::detail::output_adapter
+output_adapter	include/json.hpp	/^    output_adapter(std::basic_string<CharType>& s)$/;"	f	class:nlohmann::detail::output_adapter
+output_adapter	include/json.hpp	/^    output_adapter(std::vector<CharType>& vec)$/;"	f	class:nlohmann::detail::output_adapter
+output_adapter	include/json.hpp	/^class output_adapter$/;"	c	namespace:nlohmann::detail
+output_adapter_protocol	include/json.hpp	/^template<typename CharType> struct output_adapter_protocol$/;"	s	namespace:nlohmann::detail
+output_adapter_t	include/json.hpp	/^    using output_adapter_t = ::nlohmann::detail::output_adapter_t<CharType>;$/;"	t	class:nlohmann::basic_json	typeref:typename:::nlohmann::detail::output_adapter_t<CharType>
+output_adapter_t	include/json.hpp	/^using output_adapter_t = std::shared_ptr<output_adapter_protocol<CharType>>;$/;"	t	namespace:nlohmann::detail	typeref:typename:std::shared_ptr<output_adapter_protocol<CharType>>
+output_stream_adapter	include/json.hpp	/^    explicit output_stream_adapter(std::basic_ostream<CharType>& s) : stream(s) {}$/;"	f	class:nlohmann::detail::output_stream_adapter
+output_stream_adapter	include/json.hpp	/^class output_stream_adapter : public output_adapter_protocol<CharType>$/;"	c	namespace:nlohmann::detail
+output_string_adapter	include/json.hpp	/^    explicit output_string_adapter(std::basic_string<CharType>& s) : str(s) {}$/;"	f	class:nlohmann::detail::output_string_adapter
+output_string_adapter	include/json.hpp	/^class output_string_adapter : public output_adapter_protocol<CharType>$/;"	c	namespace:nlohmann::detail
+output_vector_adapter	include/json.hpp	/^    explicit output_vector_adapter(std::vector<CharType>& vec) : v(vec) {}$/;"	f	class:nlohmann::detail::output_vector_adapter
+output_vector_adapter	include/json.hpp	/^class output_vector_adapter : public output_adapter_protocol<CharType>$/;"	c	namespace:nlohmann::detail
+owned_value	include/json.hpp	/^    mutable value_type owned_value = nullptr;$/;"	m	class:nlohmann::detail::json_ref	typeref:typename:value_type
+parse	include/json.hpp	/^    static basic_json parse(IteratorType first, IteratorType last,$/;"	f	class:nlohmann::basic_json	typeref:typename:basic_json
+parse	include/json.hpp	/^    static basic_json parse(detail::input_adapter i,$/;"	f	class:nlohmann::basic_json	typeref:typename:basic_json
+parse	include/json.hpp	/^    static basic_json parse(detail::input_adapter& i,$/;"	f	class:nlohmann::basic_json	typeref:typename:basic_json
+parse	include/json.hpp	/^    void parse(const bool strict, BasicJsonType& result)$/;"	f	class:nlohmann::detail::parser	typeref:typename:void
+parse_cbor	include/json.hpp	/^    BasicJsonType parse_cbor(const bool strict)$/;"	f	class:nlohmann::detail::binary_reader	typeref:typename:BasicJsonType
+parse_cbor_internal	include/json.hpp	/^    BasicJsonType parse_cbor_internal(const bool get_char = true)$/;"	f	class:nlohmann::detail::binary_reader	typeref:typename:BasicJsonType
+parse_error	include/json.hpp	/^        parse_error,      \/\/\/< indicating a parse error$/;"	e	enum:nlohmann::detail::lexer::token_type
+parse_error	include/json.hpp	/^    parse_error(int id_, std::size_t byte_, const char* what_arg)$/;"	f	class:nlohmann::detail::parse_error
+parse_error	include/json.hpp	/^    using parse_error = detail::parse_error;$/;"	t	class:nlohmann::basic_json	typeref:typename:detail::parse_error
+parse_error	include/json.hpp	/^class parse_error : public exception$/;"	c	namespace:nlohmann::detail
+parse_event_t	include/json.hpp	/^    enum class parse_event_t : uint8_t$/;"	g	class:nlohmann::detail::parser	typeref:typename:uint8_t
+parse_event_t	include/json.hpp	/^    using parse_event_t = typename parser::parse_event_t;$/;"	t	class:nlohmann::basic_json	typeref:typename:parser::parse_event_t
+parse_internal	include/json.hpp	/^    void parse_internal(bool keep, BasicJsonType& result)$/;"	f	class:nlohmann::detail::parser	typeref:typename:void
+parse_msgpack	include/json.hpp	/^    BasicJsonType parse_msgpack(const bool strict)$/;"	f	class:nlohmann::detail::binary_reader	typeref:typename:BasicJsonType
+parse_msgpack_internal	include/json.hpp	/^    BasicJsonType parse_msgpack_internal()$/;"	f	class:nlohmann::detail::binary_reader	typeref:typename:BasicJsonType
+parse_ubjson	include/json.hpp	/^    BasicJsonType parse_ubjson(const bool strict)$/;"	f	class:nlohmann::detail::binary_reader	typeref:typename:BasicJsonType
+parse_ubjson_internal	include/json.hpp	/^    BasicJsonType parse_ubjson_internal(const bool get_char = true)$/;"	f	class:nlohmann::detail::binary_reader	typeref:typename:BasicJsonType
+parser	include/json.hpp	/^    explicit parser(detail::input_adapter_t adapter,$/;"	f	class:nlohmann::detail::parser
+parser	include/json.hpp	/^    using parser = ::nlohmann::detail::parser<basic_json>;$/;"	t	class:nlohmann::basic_json	typeref:typename:::nlohmann::detail::parser<basic_json>
+parser	include/json.hpp	/^class parser$/;"	c	namespace:nlohmann::detail
+parser_callback_t	include/json.hpp	/^    using parser_callback_t = typename parser::parser_callback_t;$/;"	t	class:nlohmann::basic_json	typeref:typename:parser::parser_callback_t
+parser_callback_t	include/json.hpp	/^    using parser_callback_t =$/;"	t	class:nlohmann::detail::parser
+password	include/site.hpp	/^	std::string uname, website, notes, illegal, password, email;$/;"	m	struct:site	typeref:typename:std::string
+patch	include/json.hpp	/^    basic_json patch(const basic_json& json_patch) const$/;"	f	class:nlohmann::basic_json	typeref:typename:basic_json
+patch_operations	include/json.hpp	/^        enum class patch_operations {add, remove, replace, move, copy, test, invalid};$/;"	g	function:nlohmann::basic_json::patch
+plus	include/json.hpp	/^    diyfp plus;$/;"	m	struct:nlohmann::detail::dtoa_impl::boundaries	typeref:typename:diyfp
+pointee_t	include/json.hpp	/^        using pointee_t = typename std::remove_const<typename$/;"	t	function:nlohmann::basic_json::get_ptr	typeref:typename:std::remove_const<typename std::remove_pointer<typename std::remove_const<PointerType>::type>::type>::type
+pointer	include/json.hpp	/^    using pointer = typename std::allocator_traits<allocator_type>::pointer;$/;"	t	class:nlohmann::basic_json	typeref:typename:std::allocator_traits<allocator_type>::pointer
+pointer	include/json.hpp	/^    using pointer = typename std::conditional<std::is_const<BasicJsonType>::value,$/;"	t	class:nlohmann::detail::iter_impl	typeref:typename:std::conditional<std::is_const<BasicJsonType>::value,typename BasicJsonType::const_pointer,typename BasicJsonType::pointer>::type
+pop_back	include/json.hpp	/^    std::string pop_back()$/;"	f	class:nlohmann::json_pointer	typeref:typename:std::string
+primitive_iterator	include/json.hpp	/^    primitive_iterator_t primitive_iterator {};$/;"	m	struct:nlohmann::detail::internal_iterator	typeref:typename:primitive_iterator_t
+primitive_iterator_t	include/json.hpp	/^    using primitive_iterator_t = ::nlohmann::detail::primitive_iterator_t;$/;"	t	class:nlohmann::basic_json	typeref:typename:::nlohmann::detail::primitive_iterator_t
+primitive_iterator_t	include/json.hpp	/^class primitive_iterator_t$/;"	c	namespace:nlohmann::detail
+print	utilities.cpp	/^inline void print(json::iterator a)$/;"	f	typeref:typename:void
+print	utilities.cpp	/^inline void print(site s)$/;"	f	typeref:typename:void
+priority_tag	include/json.hpp	/^template<> struct priority_tag<0> {};$/;"	s	namespace:nlohmann::detail
+priority_tag	include/json.hpp	/^template<unsigned N> struct priority_tag : priority_tag < N - 1 > {};$/;"	s	namespace:nlohmann::detail
+push_back	include/json.hpp	/^    void push_back(basic_json&& val)$/;"	f	class:nlohmann::basic_json	typeref:typename:void
+push_back	include/json.hpp	/^    void push_back(const basic_json& val)$/;"	f	class:nlohmann::basic_json	typeref:typename:void
+push_back	include/json.hpp	/^    void push_back(const typename object_t::value_type& val)$/;"	f	class:nlohmann::basic_json	typeref:typename:void
+push_back	include/json.hpp	/^    void push_back(initializer_list_t init)$/;"	f	class:nlohmann::basic_json	typeref:typename:void
+pw-gen	makefile	/^pw-gen: main.cpp $(DEPS) utilities.cpp algorithms.cpp$/;"	t
+randpw	algorithms.cpp	/^void randpw(site info)$/;"	f	typeref:typename:void
+rbegin	include/json.hpp	/^    const_reverse_iterator rbegin() const noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:const_reverse_iterator
+rbegin	include/json.hpp	/^    reverse_iterator rbegin() noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:reverse_iterator
+readIn	utilities.cpp	/^inline bool readIn()$/;"	f	typeref:typename:bool
+record	include/site.hpp	/^nlohmann::json record;$/;"	v	typeref:typename:nlohmann::json
+reference	include/json.hpp	/^    using reference = typename Base::reference;$/;"	t	class:nlohmann::detail::json_reverse_iterator	typeref:typename:Base::reference
+reference	include/json.hpp	/^    using reference = value_type&;$/;"	t	class:nlohmann::basic_json	typeref:typename:value_type &
+reference	include/json.hpp	/^    using reference =$/;"	t	class:nlohmann::detail::iter_impl	typeref:typename:std::conditional<std::is_const<BasicJsonType>::value,typename BasicJsonType::const_reference,typename BasicJsonType::reference>::type
+reference_tokens	include/json.hpp	/^    std::vector<std::string> reference_tokens;$/;"	m	class:nlohmann::json_pointer	typeref:typename:std::vector<std::string>
+reinterpret_bits	include/json.hpp	/^Target reinterpret_bits(const Source source)$/;"	f	namespace:nlohmann::detail::dtoa_impl	typeref:typename:Target
+remove	include/json.hpp	/^        enum class patch_operations {add, remove, replace, move, copy, test, invalid};$/;"	e	enum:nlohmann::basic_json::patch::patch_operations
+rend	include/json.hpp	/^    const_reverse_iterator rend() const noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:const_reverse_iterator
+rend	include/json.hpp	/^    reverse_iterator rend() noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:reverse_iterator
+replace	include/json.hpp	/^        enum class patch_operations {add, remove, replace, move, copy, test, invalid};$/;"	e	enum:nlohmann::basic_json::patch::patch_operations
+replace_substring	include/json.hpp	/^    static void replace_substring(std::string& s, const std::string& f,$/;"	f	class:nlohmann::json_pointer	typeref:typename:void
+reset	include/json.hpp	/^    void reset() noexcept$/;"	f	class:nlohmann::detail::lexer	typeref:typename:void
+ret	include/json.hpp	/^        ValueType ret;$/;"	m	class:nlohmann::basic_json	typeref:typename:ValueType
+returnCode	utilities.cpp	/^int returnCode=0;$/;"	v	typeref:typename:int
+reverse_iterator	include/json.hpp	/^    using reverse_iterator = json_reverse_iterator<typename basic_json::iterator>;$/;"	t	class:nlohmann::basic_json	typeref:typename:json_reverse_iterator<typename basic_json::iterator>
+sb	include/json.hpp	/^    std::streambuf& sb;$/;"	m	class:nlohmann::detail::input_stream_adapter	typeref:typename:std::streambuf &
+scan	include/json.hpp	/^    token_type scan()$/;"	f	class:nlohmann::detail::lexer	typeref:typename:token_type
+scan_literal	include/json.hpp	/^    token_type scan_literal(const char* literal_text, const std::size_t length,$/;"	f	class:nlohmann::detail::lexer	typeref:typename:token_type
+scan_number	include/json.hpp	/^    token_type scan_number()$/;"	f	class:nlohmann::detail::lexer	typeref:typename:token_type
+scan_string	include/json.hpp	/^    token_type scan_string()$/;"	f	class:nlohmann::detail::lexer	typeref:typename:token_type
+selector	main.cpp	/^enum selector:int{Short=0, Long=1, Rand=2};$/;"	g	typeref:typename:int	file:
+serializer	include/json.hpp	/^    serializer(output_adapter_t<char> s, const char ichar)$/;"	f	class:nlohmann::detail::serializer
+serializer	include/json.hpp	/^    using serializer = ::nlohmann::detail::serializer<basic_json>;$/;"	t	class:nlohmann::basic_json	typeref:typename:::nlohmann::detail::serializer<basic_json>
+serializer	include/json.hpp	/^class serializer$/;"	c	namespace:nlohmann::detail
+set_begin	include/json.hpp	/^    void set_begin() noexcept$/;"	f	class:nlohmann::detail::iter_impl	typeref:typename:void
+set_begin	include/json.hpp	/^    void set_begin() noexcept$/;"	f	class:nlohmann::detail::primitive_iterator_t	typeref:typename:void
+set_end	include/json.hpp	/^    void set_end() noexcept$/;"	f	class:nlohmann::detail::iter_impl	typeref:typename:void
+set_end	include/json.hpp	/^    void set_end() noexcept$/;"	f	class:nlohmann::detail::primitive_iterator_t	typeref:typename:void
+settings	include/site.hpp	/^nlohmann::json settings;$/;"	v	typeref:typename:nlohmann::json
+shortpw	algorithms.cpp	/^void shortpw(site info)$/;"	f	typeref:typename:void
+site	include/site.hpp	/^site::site()$/;"	f	class:site
+site	include/site.hpp	/^struct site{$/;"	s
+size	include/json.hpp	/^    size_type size() const noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:size_type
+size	include/json.hpp	/^    static constexpr std::size_t size() noexcept$/;"	f	struct:nlohmann::detail::index_sequence	typeref:typename:std::size_t
+size_type	include/json.hpp	/^        using size_type = typename BasicJsonType::size_type;$/;"	t	function:nlohmann::json_pointer::get_and_create	typeref:typename:BasicJsonType::size_type
+size_type	include/json.hpp	/^        using size_type = typename BasicJsonType::size_type;$/;"	t	function:nlohmann::json_pointer::get_checked	typeref:typename:BasicJsonType::size_type
+size_type	include/json.hpp	/^        using size_type = typename BasicJsonType::size_type;$/;"	t	function:nlohmann::json_pointer::get_unchecked	typeref:typename:BasicJsonType::size_type
+size_type	include/json.hpp	/^    using size_type = std::size_t;$/;"	t	class:nlohmann::basic_json	typeref:typename:std::size_t
+split	include/json.hpp	/^    static std::vector<std::string> split(const std::string& reference_string)$/;"	f	class:nlohmann::json_pointer	typeref:typename:std::vector<std::string>
+start	include/json.hpp	/^    const char* start;$/;"	m	class:nlohmann::detail::input_buffer_adapter	typeref:typename:const char *
+static_const	include/json.hpp	/^struct static_const$/;"	s	namespace:nlohmann::detail
+std	include/json.hpp	/^namespace std$/;"	n
+str	include/json.hpp	/^    std::basic_string<CharType>& str;$/;"	m	class:nlohmann::detail::output_string_adapter	typeref:typename:std::basic_string<CharType> &
+stream	include/json.hpp	/^    std::basic_ostream<CharType>& stream;$/;"	m	class:nlohmann::detail::output_stream_adapter	typeref:typename:std::basic_ostream<CharType> &
+string	include/json.hpp	/^        string_t* string;$/;"	m	union:nlohmann::basic_json::json_value	typeref:typename:string_t *
+string	include/json.hpp	/^    string,           \/\/\/< string value$/;"	e	enum:nlohmann::detail::value_t
+string_buffer	include/json.hpp	/^    std::array<char, 512> string_buffer{{}};$/;"	m	class:nlohmann::detail::serializer	typeref:typename:std::array<char,512>
+string_t	include/json.hpp	/^    using string_t = StringType;$/;"	t	class:nlohmann::basic_json	typeref:typename:StringType
+string_t	include/json.hpp	/^    using string_t = typename BasicJsonType::string_t;$/;"	t	class:nlohmann::detail::binary_reader	typeref:typename:BasicJsonType::string_t
+string_t	include/json.hpp	/^    using string_t = typename BasicJsonType::string_t;$/;"	t	class:nlohmann::detail::serializer	typeref:typename:BasicJsonType::string_t
+strtof	include/json.hpp	/^    static void strtof(double& f, const char* str, char** endptr) noexcept$/;"	f	class:nlohmann::detail::lexer	typeref:typename:void
+strtof	include/json.hpp	/^    static void strtof(float& f, const char* str, char** endptr) noexcept$/;"	f	class:nlohmann::detail::lexer	typeref:typename:void
+strtof	include/json.hpp	/^    static void strtof(long double& f, const char* str, char** endptr) noexcept$/;"	f	class:nlohmann::detail::lexer	typeref:typename:void
+sub	include/json.hpp	/^    static diyfp sub(const diyfp& x, const diyfp& y) noexcept$/;"	f	struct:nlohmann::detail::dtoa_impl::diyfp	typeref:typename:diyfp
+swap	include/json.hpp	/^    void swap(array_t& other)$/;"	f	class:nlohmann::basic_json	typeref:typename:void
+swap	include/json.hpp	/^    void swap(object_t& other)$/;"	f	class:nlohmann::basic_json	typeref:typename:void
+swap	include/json.hpp	/^    void swap(reference other) noexcept ($/;"	f	class:nlohmann::basic_json	typeref:typename:void
+swap	include/json.hpp	/^    void swap(string_t& other)$/;"	f	class:nlohmann::basic_json	typeref:typename:void
+swap	include/json.hpp	/^inline void swap(nlohmann::json& j1,$/;"	f	namespace:std	typeref:typename:void
+systemLog	utilities.cpp	/^ofstream systemLog;$/;"	v	typeref:typename:ofstream
+test	include/json.hpp	/^        enum class patch_operations {add, remove, replace, move, copy, test, invalid};$/;"	e	enum:nlohmann::basic_json::patch::patch_operations
+thousands_sep	include/json.hpp	/^    const char thousands_sep = '\\0';$/;"	m	class:nlohmann::detail::serializer	typeref:typename:const char
+throw_exception	include/json.hpp	/^    [[noreturn]] void throw_exception() const$/;"	f	class:nlohmann::detail::parser	typeref:typename:[[noreturn]]void
+to_cbor	include/json.hpp	/^    static std::vector<uint8_t> to_cbor(const basic_json& j)$/;"	f	class:nlohmann::basic_json	typeref:typename:std::vector<uint8_t>
+to_cbor	include/json.hpp	/^    static void to_cbor(const basic_json& j, detail::output_adapter<char> o)$/;"	f	class:nlohmann::basic_json	typeref:typename:void
+to_cbor	include/json.hpp	/^    static void to_cbor(const basic_json& j, detail::output_adapter<uint8_t> o)$/;"	f	class:nlohmann::basic_json	typeref:typename:void
+to_chars	include/json.hpp	/^char* to_chars(char* first, char* last, FloatType value)$/;"	f	namespace:nlohmann::detail	typeref:typename:char *
+to_json	include/json.hpp	/^    static void to_json(BasicJsonType& j, ValueType&& val) noexcept($/;"	f	struct:nlohmann::adl_serializer	typeref:typename:void
+to_json	include/json.hpp	/^constexpr const auto& to_json = detail::static_const<detail::to_json_fn>::value;$/;"	v	namespace:nlohmann::__anon332590a80610	typeref:typename:const auto &
+to_json	include/json.hpp	/^void to_json(BasicJsonType& j, CompatibleNumberIntegerType val) noexcept$/;"	f	namespace:nlohmann::detail	typeref:typename:void
+to_json	include/json.hpp	/^void to_json(BasicJsonType& j, CompatibleNumberUnsignedType val) noexcept$/;"	f	namespace:nlohmann::detail	typeref:typename:void
+to_json	include/json.hpp	/^void to_json(BasicJsonType& j, EnumType e) noexcept$/;"	f	namespace:nlohmann::detail	typeref:typename:void
+to_json	include/json.hpp	/^void to_json(BasicJsonType& j, FloatType val) noexcept$/;"	f	namespace:nlohmann::detail	typeref:typename:void
+to_json	include/json.hpp	/^void to_json(BasicJsonType& j, T (&arr)[N])$/;"	f	namespace:nlohmann::detail	typeref:typename:void
+to_json	include/json.hpp	/^void to_json(BasicJsonType& j, T b) noexcept$/;"	f	namespace:nlohmann::detail	typeref:typename:void
+to_json	include/json.hpp	/^void to_json(BasicJsonType& j, const CompatibleArrayType& arr)$/;"	f	namespace:nlohmann::detail	typeref:typename:void
+to_json	include/json.hpp	/^void to_json(BasicJsonType& j, const CompatibleObjectType& obj)$/;"	f	namespace:nlohmann::detail	typeref:typename:void
+to_json	include/json.hpp	/^void to_json(BasicJsonType& j, const CompatibleString& s)$/;"	f	namespace:nlohmann::detail	typeref:typename:void
+to_json	include/json.hpp	/^void to_json(BasicJsonType& j, const std::pair<Args...>& p)$/;"	f	namespace:nlohmann::detail	typeref:typename:void
+to_json	include/json.hpp	/^void to_json(BasicJsonType& j, const std::tuple<Args...>& t)$/;"	f	namespace:nlohmann::detail	typeref:typename:void
+to_json	include/json.hpp	/^void to_json(BasicJsonType& j, const std::vector<bool>& e)$/;"	f	namespace:nlohmann::detail	typeref:typename:void
+to_json	include/json.hpp	/^void to_json(BasicJsonType& j, std::valarray<T> arr)$/;"	f	namespace:nlohmann::detail	typeref:typename:void
+to_json	include/json.hpp	/^void to_json(BasicJsonType& j, typename BasicJsonType::array_t&& arr)$/;"	f	namespace:nlohmann::detail	typeref:typename:void
+to_json	include/json.hpp	/^void to_json(BasicJsonType& j, typename BasicJsonType::object_t&& obj)$/;"	f	namespace:nlohmann::detail	typeref:typename:void
+to_json	include/json.hpp	/^void to_json(BasicJsonType& j, typename BasicJsonType::string_t&& s)$/;"	f	namespace:nlohmann::detail	typeref:typename:void
+to_json_fn	include/json.hpp	/^struct to_json_fn$/;"	s	namespace:nlohmann::detail
+to_json_tuple_impl	include/json.hpp	/^void to_json_tuple_impl(BasicJsonType& j, const Tuple& t, index_sequence<Idx...>)$/;"	f	namespace:nlohmann::detail	typeref:typename:void
+to_msgpack	include/json.hpp	/^    static std::vector<uint8_t> to_msgpack(const basic_json& j)$/;"	f	class:nlohmann::basic_json	typeref:typename:std::vector<uint8_t>
+to_msgpack	include/json.hpp	/^    static void to_msgpack(const basic_json& j, detail::output_adapter<char> o)$/;"	f	class:nlohmann::basic_json	typeref:typename:void
+to_msgpack	include/json.hpp	/^    static void to_msgpack(const basic_json& j, detail::output_adapter<uint8_t> o)$/;"	f	class:nlohmann::basic_json	typeref:typename:void
+to_string	include/json.hpp	/^    std::string to_string() const noexcept$/;"	f	class:nlohmann::json_pointer	typeref:typename:std::string
+to_ubjson	include/json.hpp	/^    static std::vector<uint8_t> to_ubjson(const basic_json& j,$/;"	f	class:nlohmann::basic_json	typeref:typename:std::vector<uint8_t>
+to_ubjson	include/json.hpp	/^    static void to_ubjson(const basic_json& j, detail::output_adapter<char> o,$/;"	f	class:nlohmann::basic_json	typeref:typename:void
+to_ubjson	include/json.hpp	/^    static void to_ubjson(const basic_json& j, detail::output_adapter<uint8_t> o,$/;"	f	class:nlohmann::basic_json	typeref:typename:void
+token_buffer	include/json.hpp	/^    std::string token_buffer {};$/;"	m	class:nlohmann::detail::lexer	typeref:typename:std::string
+token_string	include/json.hpp	/^    std::vector<char> token_string {};$/;"	m	class:nlohmann::detail::lexer	typeref:typename:std::vector<char>
+token_type	include/json.hpp	/^    enum class token_type$/;"	g	class:nlohmann::detail::lexer
+token_type	include/json.hpp	/^    using token_type = typename lexer_t::token_type;$/;"	t	class:nlohmann::detail::parser	typeref:typename:lexer_t::token_type
+token_type_name	include/json.hpp	/^    static const char* token_type_name(const token_type t) noexcept$/;"	f	class:nlohmann::detail::lexer	typeref:typename:const char *
+top	include/json.hpp	/^    json_pointer top() const$/;"	f	class:nlohmann::json_pointer	typeref:typename:json_pointer
+type	include/json.hpp	/^    constexpr value_t type() const noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:value_t
+type	include/json.hpp	/^    using type = index_sequence;$/;"	t	struct:nlohmann::detail::index_sequence	typeref:typename:index_sequence
+type_error	include/json.hpp	/^    type_error(int id_, const char* what_arg) : exception(id_, what_arg) {}$/;"	f	class:nlohmann::detail::type_error
+type_error	include/json.hpp	/^    using type_error = detail::type_error;$/;"	t	class:nlohmann::basic_json	typeref:typename:detail::type_error
+type_error	include/json.hpp	/^class type_error : public exception$/;"	c	namespace:nlohmann::detail
+type_name	include/json.hpp	/^    const char* type_name() const noexcept$/;"	f	class:nlohmann::basic_json	typeref:typename:const char *
+ubjson_prefix	include/json.hpp	/^    char ubjson_prefix(const BasicJsonType& j) const noexcept$/;"	f	class:nlohmann::detail::binary_writer	typeref:typename:char
+uname	include/site.hpp	/^	std::string uname, website, notes, illegal, password, email;$/;"	m	struct:site	typeref:typename:std::string
+uncvref_t	include/json.hpp	/^using uncvref_t = typename std::remove_cv<typename std::remove_reference<T>::type>::type;$/;"	t	namespace:nlohmann::detail	typeref:typename:std::remove_cv<typename std::remove_reference<T>::type>::type
+underlying_type	include/json.hpp	/^    using underlying_type = typename std::underlying_type<EnumType>::type;$/;"	t	function:nlohmann::detail::to_json	typeref:typename:std::underlying_type<EnumType>::type
+unescape	include/json.hpp	/^    static void unescape(std::string& s)$/;"	f	class:nlohmann::json_pointer	typeref:typename:void
+unexpect_eof	include/json.hpp	/^    void unexpect_eof() const$/;"	f	class:nlohmann::detail::binary_reader	typeref:typename:void
+unflatten	include/json.hpp	/^    basic_json unflatten() const$/;"	f	class:nlohmann::basic_json	typeref:typename:basic_json
+unflatten	include/json.hpp	/^    unflatten(const BasicJsonType& value)$/;"	f	class:nlohmann::json_pointer	typeref:typename:BasicJsonType
+unget	include/json.hpp	/^    void unget()$/;"	f	class:nlohmann::detail::lexer	typeref:typename:void
+unget_character	include/json.hpp	/^    void unget_character() noexcept override$/;"	f	class:nlohmann::detail::input_buffer_adapter	typeref:typename:void
+unget_character	include/json.hpp	/^    void unget_character() override$/;"	f	class:nlohmann::detail::input_stream_adapter	typeref:typename:void
+uninitialized	include/json.hpp	/^        uninitialized,    \/\/\/< indicating the scanner is uninitialized$/;"	e	enum:nlohmann::detail::lexer::token_type
+update	include/json.hpp	/^    void update(const_iterator first, const_iterator last)$/;"	f	class:nlohmann::basic_json	typeref:typename:void
+update	include/json.hpp	/^    void update(const_reference j)$/;"	f	class:nlohmann::basic_json	typeref:typename:void
+v	include/json.hpp	/^    std::vector<CharType>& v;$/;"	m	class:nlohmann::detail::output_vector_adapter	typeref:typename:std::vector<CharType> &
+value	include/json.hpp	/^        typename IteratorType::reference value() const$/;"	f	class:nlohmann::detail::iteration_proxy::iteration_proxy_internal	typeref:typename:IteratorType::reference
+value	include/json.hpp	/^        value$/;"	e	enum:nlohmann::detail::parser::parse_event_t
+value	include/json.hpp	/^    ValueType value(const json_pointer& ptr, const ValueType& default_value) const$/;"	f	class:nlohmann::basic_json	typeref:typename:ValueType
+value	include/json.hpp	/^    ValueType value(const typename object_t::key_type& key, const ValueType& default_value) cons/;"	f	class:nlohmann::basic_json	typeref:typename:ValueType
+value	include/json.hpp	/^    reference value() const$/;"	f	class:nlohmann::detail::iter_impl	typeref:typename:reference
+value	include/json.hpp	/^    reference value() const$/;"	f	class:nlohmann::detail::json_reverse_iterator	typeref:typename:reference
+value	include/json.hpp	/^    static auto constexpr value = is_compatible_object_type_impl <$/;"	m	struct:nlohmann::detail::is_compatible_object_type	typeref:typename:auto 
+value	include/json.hpp	/^    static auto constexpr value = std::is_same<T, typename BasicJsonType::iterator>::value or$/;"	m	struct:nlohmann::detail::is_basic_json_nested_type	typeref:typename:auto 
+value	include/json.hpp	/^    static auto constexpr value =$/;"	m	struct:nlohmann::detail::is_compatible_array_type	typeref:typename:auto 
+value	include/json.hpp	/^    static constexpr T value{};$/;"	m	struct:nlohmann::detail::static_const	typeref:typename:T
+value	include/json.hpp	/^    static constexpr auto value =$/;"	m	struct:nlohmann::detail::is_compatible_integer_type	typeref:typename:auto
+value	include/json.hpp	/^    static constexpr auto value =$/;"	m	struct:nlohmann::detail::is_compatible_integer_type_impl	typeref:typename:auto
+value	include/json.hpp	/^    static constexpr auto value =$/;"	m	struct:nlohmann::detail::is_compatible_object_type_impl	typeref:typename:auto
+value	include/json.hpp	/^    static constexpr bool value = std::is_integral<decltype($/;"	m	struct:nlohmann::detail::has_from_json	typeref:typename:bool
+value	include/json.hpp	/^    static constexpr bool value = std::is_integral<decltype(detect($/;"	m	struct:nlohmann::detail::has_non_default_from_json	typeref:typename:bool
+value	include/json.hpp	/^    static constexpr bool value = std::is_integral<decltype(detect($/;"	m	struct:nlohmann::detail::has_to_json	typeref:typename:bool
+value	include/json.hpp	/^    static constexpr bool value =$/;"	m	struct:nlohmann::detail::is_compatible_complete_type	typeref:typename:bool
+value	include/json.hpp	/^    string_t value(const json_pointer& ptr, const char* default_value) const$/;"	f	class:nlohmann::basic_json	typeref:typename:string_t
+value	include/json.hpp	/^    string_t value(const typename object_t::key_type& key, const char* default_value) const$/;"	f	class:nlohmann::basic_json	typeref:typename:string_t
+value	include/json.hpp	/^constexpr T static_const<T>::value;$/;"	m	class:nlohmann::detail::static_const<T>	typeref:typename:T
+value_float	include/json.hpp	/^        value_float,      \/\/\/< an floating point number -- use get_number_float() for actual /;"	e	enum:nlohmann::detail::lexer::token_type
+value_float	include/json.hpp	/^    number_float_t value_float = 0;$/;"	m	class:nlohmann::detail::lexer	typeref:typename:number_float_t
+value_integer	include/json.hpp	/^        value_integer,    \/\/\/< a signed integer -- use get_number_integer() for actual value$/;"	e	enum:nlohmann::detail::lexer::token_type
+value_integer	include/json.hpp	/^    number_integer_t value_integer = 0;$/;"	m	class:nlohmann::detail::lexer	typeref:typename:number_integer_t
+value_ref	include/json.hpp	/^    value_type* value_ref = nullptr;$/;"	m	class:nlohmann::detail::json_ref	typeref:typename:value_type *
+value_separator	include/json.hpp	/^        value_separator,  \/\/\/< the value separator `,`$/;"	e	enum:nlohmann::detail::lexer::token_type
+value_string	include/json.hpp	/^        value_string,     \/\/\/< a string -- use get_string() for actual value$/;"	e	enum:nlohmann::detail::lexer::token_type
+value_t	include/json.hpp	/^    using value_t = detail::value_t;$/;"	t	class:nlohmann::basic_json	typeref:typename:detail::value_t
+value_t	include/json.hpp	/^enum class value_t : std::uint8_t$/;"	g	namespace:nlohmann::detail	typeref:typename:std::uint8_t
+value_type	include/json.hpp	/^    using value_type = BasicJsonType;$/;"	t	class:nlohmann::detail::json_ref	typeref:typename:BasicJsonType
+value_type	include/json.hpp	/^    using value_type = basic_json;$/;"	t	class:nlohmann::basic_json	typeref:typename:basic_json
+value_type	include/json.hpp	/^    using value_type = std::size_t;$/;"	t	struct:nlohmann::detail::index_sequence	typeref:typename:std::size_t
+value_type	include/json.hpp	/^    using value_type = typename BasicJsonType::value_type;$/;"	t	class:nlohmann::detail::iter_impl	typeref:typename:BasicJsonType::value_type
+value_type	include/json.hpp	/^    using value_type = typename CompatibleObjectType::value_type;$/;"	t	function:nlohmann::detail::from_json	typeref:typename:CompatibleObjectType::value_type
+value_unsigned	include/json.hpp	/^        value_unsigned,   \/\/\/< an unsigned integer -- use get_number_unsigned() for actual va/;"	e	enum:nlohmann::detail::lexer::token_type
+value_unsigned	include/json.hpp	/^    number_unsigned_t value_unsigned = 0;$/;"	m	class:nlohmann::detail::lexer	typeref:typename:number_unsigned_t
+w	include/json.hpp	/^    diyfp w;$/;"	m	struct:nlohmann::detail::dtoa_impl::boundaries	typeref:typename:diyfp
+website	include/site.hpp	/^	std::string uname, website, notes, illegal, password, email;$/;"	m	struct:site	typeref:typename:std::string
+what	include/json.hpp	/^    const char* what() const noexcept override$/;"	f	class:nlohmann::detail::exception	typeref:typename:const char *
+write	utilities.cpp	/^inline void write()$/;"	f	typeref:typename:void
+write_cbor	include/json.hpp	/^    void write_cbor(const BasicJsonType& j)$/;"	f	class:nlohmann::detail::binary_writer	typeref:typename:void
+write_character	include/json.hpp	/^    void write_character(CharType c) override$/;"	f	class:nlohmann::detail::output_stream_adapter	typeref:typename:void
+write_character	include/json.hpp	/^    void write_character(CharType c) override$/;"	f	class:nlohmann::detail::output_string_adapter	typeref:typename:void
+write_character	include/json.hpp	/^    void write_character(CharType c) override$/;"	f	class:nlohmann::detail::output_vector_adapter	typeref:typename:void
+write_characters	include/json.hpp	/^    void write_characters(const CharType* s, std::size_t length) override$/;"	f	class:nlohmann::detail::output_stream_adapter	typeref:typename:void
+write_characters	include/json.hpp	/^    void write_characters(const CharType* s, std::size_t length) override$/;"	f	class:nlohmann::detail::output_string_adapter	typeref:typename:void
+write_characters	include/json.hpp	/^    void write_characters(const CharType* s, std::size_t length) override$/;"	f	class:nlohmann::detail::output_vector_adapter	typeref:typename:void
+write_msgpack	include/json.hpp	/^    void write_msgpack(const BasicJsonType& j)$/;"	f	class:nlohmann::detail::binary_writer	typeref:typename:void
+write_number	include/json.hpp	/^    void write_number(const NumberType n)$/;"	f	class:nlohmann::detail::binary_writer	typeref:typename:void
+write_number_with_ubjson_prefix	include/json.hpp	/^    void write_number_with_ubjson_prefix(const NumberType n,$/;"	f	class:nlohmann::detail::binary_writer	typeref:typename:void
+write_ubjson	include/json.hpp	/^    void write_ubjson(const BasicJsonType& j, const bool use_count,$/;"	f	class:nlohmann::detail::binary_writer	typeref:typename:void
+~basic_json	include/json.hpp	/^    ~basic_json() noexcept$/;"	f	class:nlohmann::basic_json
+~input_stream_adapter	include/json.hpp	/^    ~input_stream_adapter() override$/;"	f	class:nlohmann::detail::input_stream_adapter
