@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 pw-gen: a password generator and database manager
+=======
+pw-gen: Password generator & database manager
+>>>>>>> 5fc3506071b23b41be99fe74f179c5caeb3a9ce2
 Copyright (C) 2018  William Collings
 
 This program is free software; you can redistribute it and/or
