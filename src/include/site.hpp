@@ -5,7 +5,7 @@
 #ifndef __SITE_H_
 #define __SITE_H_
 
-
+#define VERSION_NUMBER 0.5.2
 nlohmann::json settings;
 nlohmann::json record;
 
@@ -20,4 +20,8 @@ site::site()
 	uname=website=notes=illegal=password=email="";
 	length=10;
 }
+
+struct acct{
+	std::string uname, website, notes, password, email;
+};
 #endif

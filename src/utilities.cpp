@@ -13,19 +13,21 @@
 using namespace std;
 using json= nlohmann::json;
 int returnCode=0;
-inline bool exists(std::string);
-inline bool readIn();
-inline int convertToNumber(char);
-inline void Find(std::string);
-inline void help();
-inline void write();
-inline void logNewEntry(site);
-inline void print(json::iterator);
-inline void print(site);
-inline void logMessages(int);
+bool exists(std::string);
+bool readIn();
+int convertToNumber(char);
+void Find(std::string);
+void help();
+void write();
+void logNewEntry(site);
+void print(json::iterator);
+void print(site);
+void logMessages(int);
+void printsettings();
+site copyToSite(std::string);
 
 ofstream systemLog;
-inline bool exists(string toFind)
+bool exists(string toFind)
 {
 	auto find=record.find(toFind);
 	if (find!= record.end())
@@ -37,10 +39,10 @@ inline bool exists(string toFind)
 	return false;
 }
 
-inline bool readIn()
+bool readIn()
 {
 	ifstream in;
-	in.open("settings.json");
+	in.open("../settings.json");
 	if (in)
 	{
 		in >>settings;
@@ -57,14 +59,14 @@ inline bool readIn()
 	return false;
 }
 
-inline int convertToNumber(char c)
+int convertToNumber(char c)
 {
 	char temp=toupper(c);
 	int num=(static_cast<int>(temp))-64;
    return num;	
 }
 
-inline void Find(string a)
+void Find(string a)
 {
 	auto find=record.find(a);
 	if (find != record.end())
@@ -73,7 +75,7 @@ inline void Find(string a)
 	}
 }
 
-inline void print(json::iterator a)
+void print(json::iterator a)
 {
 	cout <<"data for site \"" <<a.key() <<"\":\n";
 	json j=a.value();
@@ -81,7 +83,7 @@ inline void print(json::iterator a)
 		cout <<'\t' <<i.key() <<':' <<i.value().dump(3) <<'\n';
 }
 
-inline void print(site s)
+void print(site s)
 {
 	cout <<"data for site \"" <<s.website <<"\":\n";
 	if (s.email != "") cout <<'\t' <<"email: " <<s.email <<'\n';
@@ -90,7 +92,7 @@ inline void print(site s)
 }
 
 
-inline void help()
+void help()
 {
 	cout <<"summary of arguments:\n"
 		  <<"\t-p: print all entries\n"
@@ -99,7 +101,7 @@ inline void help()
 		  <<"\t-r: generate a random series of characters. must specify a length as well\n";
 }
 
-inline void write()
+void write()
 {
 	ofstream out;
 	out.open(settings.at("save_file").get<std::string>());
@@ -108,7 +110,7 @@ inline void write()
 	out.close();
 }
 
-inline void logNewEntry(site s)
+void logNewEntry(site s)
 {
 	json j;
 	j["password"]=s.password;
@@ -121,7 +123,7 @@ inline void logNewEntry(site s)
 	record[s.website]=j;
 }
 
-inline void logMessages(int code)
+void logMessages(int code)
 {
 	time_t t=time(0);
 	struct tm * now = localtime(&t);
@@ -144,4 +146,9 @@ inline void logMessages(int code)
 		default: systemLog <<"unknown error occurred";
 	}
 	systemLog <<'\n';
+}
+
+site copyToSite(std::string)
+{
+	
 }

@@ -1,92 +1,95 @@
 //copyright 2018 William Collings
 //MAIN
 //has the main function, and that's it
-
+#include <iostream>
 #include <string>
 #include "include/site.hpp"
 #include "algorithms.cpp"
+#include <getopt.h>
+#include <unistd.h>
+#include <optional>
 using namespace std;
 
 enum selector:int{Short=0, Long=1, Rand=2};
 void create_password(site, selector);
 
+bool process(int argc, char * argv[])
+{
+	site temp;
+	int option;
+	selector s;
+	bool generate=false, enough_data=false;
+	while ((option=getopt(argc, argv, "LSRf:i:e:l:u:")) !=-1)
+	{
+		cout <<"option is " <<(char)option;
+		if (option == '?')
+		{
+			cout <<"option " <<(char)optopt <<" requires an argument\n";
+			break;
+		}
+		switch (option)
+		{
+			case 'L': {
+					s=Long;
+					generate=true;
+				}
+				break;
+			case 'S': {
+					s=Short;
+					generate=true;
+				}
+				break;
+			case 'R': {
+					s=Rand;
+					generate=true;
+				}
+				break;
+			case 'f': {
+					exists(optarg);
+					enough_data=true;
+				}
+				break;
+			case 'i': temp.illegal=optarg;
+				break;
+			case 'e': {
+					temp.email=optarg;
+					enough_data=true;
+				}
+				break;
+			case 'l': temp.length=atoi(optarg);
+				break;
+			case 'u': {
+					temp.uname=optarg; 
+					enough_data=true;
+				}
+		}
+	}
+	if (optind <argc)
+		temp.website=argv[optind];
+	if (!enough_data)
+	{
+		cout <<"Not enough data! I need a username or email adress associated with that as well\n";
+		return false;
+	}
+	else if (generate)
+ 	{
+		create_password(temp, s);	
+	} 
+	return true;
+}
+
 int main(int argc, char * argv[])
 {
 	systemLog.open("/var/log/pw-gen.log", std::ofstream::app);
+	readIn();
 	if (!systemLog)
 	{
 		cout <<"error: could not initialize log file\n";
 		logMessages(-1);
 		return returnCode;
 	}
-	site temp;
-	if (!readIn()) return -1;
-	temp.illegal=settings.at("illegal").get<std::string>();
-	temp.length=settings.at("default_length").get<int>();
-	bool generate=false;
-	selector flag;
-	if (argc < 2)
-	{
-		help();
-		return 0;
-	}
-	
-	for (int i=1; i < argc; ++i)
-	{
-	 	if (argv[i][0]=='-')
-			switch(argv[i][1])
-			{
-				case 'L':
-				{
-					flag=Long;
-					generate=true;
-				}
-					break;
-				case 'S':
-				{
-					flag=Short;
-					generate=true;
-				}
-					break;
-				case 'R':
-				{
-						flag=Rand;
-						generate=true;
-				}
-					break;
-				case 'i':
-				{
-					temp.illegal=argv[++i];
-				}
-					break;
-				case 'n':
-				{
-					//read in notes. will have to be a prompt
-				}
-					break;
-				case 'f':
-				{
-					exists(argv[++i]);
-				}
-					break;
-				case 'u':
-				{
-					temp.uname=argv[++i];
-				}
-					break;
-				case 'l':
-				{
-					temp.length=atoi(argv[++i]);
-				}
-					break;
-				case 'e':
-					temp.email=argv[++i];
-			}
-		else temp.website=argv[i];
-	}
-	if (generate)
-		create_password(temp, flag);
-	write();
+	if (process(argc, argv))
+		write();
 	systemLog.close();
 	return returnCode;
 }
@@ -123,25 +126,3 @@ void create_password(site temp, selector flag)
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
