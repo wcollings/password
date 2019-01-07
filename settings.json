@@ -1,10 +1,6 @@
 {
     "verbose":false,
-<<<<<<< HEAD
     "save_file": "db_temp",
-=======
-    "save_file": "/home/wmc/.pw-gen/db.json",
->>>>>>> 5fc3506071b23b41be99fe74f179c5caeb3a9ce2
     "illegal": "!@#~<>\\",
     "default_length": 10,
 	 "words_file": "/usr/local/etc/pw-gen/words.txt"
