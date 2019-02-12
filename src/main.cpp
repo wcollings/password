@@ -86,12 +86,12 @@ int main(int argc, char * argv[])
 	{
 		cout <<"error: could not initialize log file\n";
 		logMessages(-1);
-		return returnCode;
+		return -1;
 	}
 	if (process(argc, argv))
 		write();
 	systemLog.close();
-	return returnCode;
+	return 0;
 }
 
 void create_password(site temp, selector flag)
