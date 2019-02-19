@@ -1,4 +1,4 @@
-//copyright 2018 William Collings
+//copyright 2019 William Collings
 //UTILITIES
 //
 //has all the misc. functions.
@@ -34,6 +34,7 @@ inline bool exists(string toFind)
 		Find(toFind);
 		return true;
 	}
+	cout <<"couldn't find entry: " <<toFind <<'\n';
 	return false;
 }
 

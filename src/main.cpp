@@ -19,7 +19,7 @@ bool process(int argc, char * argv[])
 	int option;
 	selector s;
 	bool generate=false, enough_data=false;
-	while ((option=getopt(argc, argv, "LSRf:i:e:l:u:")) !=-1)
+	while ((option=getopt(argc, argv, "LSRf:i:e:l:u:v")) !=-1)
 	{
 		cout <<"option is " <<(char)option;
 		if (option == '?')
@@ -61,6 +61,9 @@ bool process(int argc, char * argv[])
 			case 'u': {
 					temp.uname=optarg; 
 					enough_data=true;
+				}
+			case 'v': {
+					
 				}
 		}
 	}
