@@ -1,0 +1,32 @@
+CC= g++
+flags= -lform -lncurses -g
+
+all: windowHandler.o main_menu.o short.o menu.o input.o main.cpp
+	$(CC) $^ $(flags)
+
+windowHandler.o: main_menu.o menus/windowHandler.hpp menus/windowHandler.cpp
+	$(CC) menus/windowHandler.hpp
+	$(CC) -c menus/windowHandler.cpp $(flags)
+
+main_menu.o: menu.o menus/main_menu.hpp menus/main_menu.cpp
+	$(CC) menus/main_menu.hpp
+	$(CC) -c menu.o menus/main_menu.cpp $(flags)
+
+short.o: menu.o menus/short.cpp menus/short.hpp
+	$(CC) menus/short.hpp
+	$(CC) -c menu.o menus/short.cpp $(flags)
+
+menu.o: menus/menu.cpp menus/menu.hpp
+	$(CC) menus/menu.hpp
+	$(CC) -c menus/menu.cpp $(flags)
+
+test: input.o test.cpp
+	$(CC) -o test $^ $(flags)
+
+input.o:menu.o menus/input.hpp menus/input.cpp
+	$(CC) -c menus/input.hpp
+	$(CC) -c menus/input.cpp $(flags)
+
+clean:
+	rm *.o
+	rm menus/*.o

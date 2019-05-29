@@ -15,7 +15,7 @@ using namespace std;
 using json= nlohmann::json;
 
 //generate a long password: 3 words strung together
-void longpw(site info)
+std::string longpw(site info)
 {
 	srand(time(NULL));
 	ifstream in;
@@ -38,14 +38,15 @@ void longpw(site info)
 		if (x <2) pw+="_";
 		r=rand()%list.size();
 	}
-	info.password=pw;
+//	info.password=pw;
 	cout <<info.website <<": " <<info.uname <<'\n' <<pw <<'\n';
-	logNewEntry(info);
+//	logNewEntry(info);
+	return pw;
 
 }
 
 //generate a normal password
-void shortpw(site info)
+std::string shortpw(site info)
 {
 	time_t t=time(0);
 	struct tm * now = localtime(& t);
@@ -81,12 +82,13 @@ void shortpw(site info)
 		}
 	}
 	cout <<info.website <<": " <<info.uname <<'\n' <<pw <<'\n';
-	info.password=pw;
-	logNewEntry(info);
+//	info.password=pw;
+//	logNewEntry(info);
+	return pw;
 }
 
 //x number of random digits 
-void randpw(site info)
+std::string randpw(site info)
 {
 	//valid between 50 143
 	string pw;
@@ -111,7 +113,8 @@ void randpw(site info)
 		++i;
 		
 	}
-	info.password=pw;
+//	info.password=pw;
 	cout <<info.website <<": " <<info.uname <<'\n' <<pw <<'\n';
-	logNewEntry(info);
+//	logNewEntry(info);
+	return pw;
 }

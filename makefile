@@ -39,3 +39,9 @@ update:
 	gzip -k pw-gen.1
 	cp pw-gen.1.gz /usr/local/share/man/man1
 	mandb
+
+clean:
+	mv src/util src/utilities.cpp
+	mv src/algos src/algorithms.cpp
+	mv src/main src/main.cpp
+	rm src/*.o

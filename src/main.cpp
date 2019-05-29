@@ -21,7 +21,6 @@ bool process(int argc, char * argv[])
 	bool generate=false, enough_data=false;
 	while ((option=getopt(argc, argv, "LSRf:i:e:l:u:")) !=-1)
 	{
-		cout <<"option is " <<(char)option;
 		if (option == '?')
 		{
 			cout <<"option " <<(char)optopt <<" requires an argument\n";
@@ -73,7 +72,8 @@ bool process(int argc, char * argv[])
 	}
 	else if (generate)
  	{
-		create_password(temp, s);	
+//		if (temp.uname==NULL && temp.email!="")	temp.uname=temp.email.substr(0,temp.email.find("@")-1);
+//		create_password(temp, s);	
 	} 
 	return true;
 }
@@ -96,7 +96,8 @@ int main(int argc, char * argv[])
 
 void create_password(site temp, selector flag)
 {
-	if (exists(temp.website))
+	auto find=exists(temp.website);
+	if (find!=record.end())
 	{
 		int sel;
 		cout <<"A record for that site already exists. please select:\n"
@@ -106,7 +107,9 @@ void create_password(site temp, selector flag)
 		cin >>sel;
 		if (sel == 1)
 		{
-					
+			//find the record
+			//pull it in
+			//update the password field
 		}
 		else
 		{
@@ -118,11 +121,11 @@ void create_password(site temp, selector flag)
 		logMessages(1);
 		switch (flag)
 		{
-			case Short: shortpw(temp);
+			case Short: temp.password=shortpw(temp);
 				break;
-			case Long: longpw(temp);
+			case Long: temp.password=longpw(temp);
 				break;
-			case Rand: randpw(temp); 
+			case Rand: temp.password=randpw(temp); 
 		}
 	}
 }

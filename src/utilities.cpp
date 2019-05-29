@@ -13,7 +13,7 @@
 using namespace std;
 using json= nlohmann::json;
 
-inline bool exists(std::string);
+//inline auto exists(std::string);
 inline bool readIn();
 inline int convertToNumber(char);
 inline void Find(std::string);
@@ -25,19 +25,18 @@ inline void print(site);
 inline void logMessages(int);
 
 ofstream systemLog;
-inline bool exists(string toFind)
+inline auto exists(string toFind)
 {
 	auto find=record.find(toFind);
 	if (find!= record.end())
 	{
 		cout <<"from database:\n";
-		Find(toFind);
-		return true;
+		print(find);
 	}
-	return false;
+	return find;
 }
 
-inline bool readIn()
+bool readIn()
 {
 	ifstream in;
 	in.open("settings.json");
@@ -76,9 +75,8 @@ inline void Find(string a)
 inline void print(json::iterator a)
 {
 	cout <<"data for site \"" <<a.key() <<"\":\n";
-	json j=a.value();
-	for (auto i=j.begin(); i != j.end(); ++i)
-		cout <<'\t' <<i.key() <<':' <<i.value().dump(3) <<'\n';
+	std::cout <<*a;
+
 }
 
 inline void print(site s)
@@ -121,7 +119,7 @@ inline void logNewEntry(site s)
 	record[s.website]=j;
 }
 
-inline void logMessages(int code)
+void logMessages(int code)
 {
 	time_t t=time(0);
 	struct tm * now = localtime(&t);
@@ -143,3 +141,4 @@ inline void logMessages(int code)
 	}
 	systemLog <<'\n';
 }
+
