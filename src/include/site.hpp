@@ -10,14 +10,15 @@ nlohmann::json settings;
 nlohmann::json record;
 
 struct site{
-	std::string uname, website, notes, illegal, password, email;
+	std::string uname, website, illegal, password, email;
+	std::vector<std::string> notes;
 	int length;
 	site();
 };
 
 site::site()
 {
-	uname=website=notes=illegal=password=email="";
+	uname=website=illegal=password=email="";
 	length=10;
 }
 

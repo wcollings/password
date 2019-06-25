@@ -10,8 +10,26 @@
 #include <optional>
 using namespace std;
 
-enum selector:int{Short=0, Long=1, Rand=2};
+enum selector:int{Short=0, Long=1, Rand=2, F=3};
 void create_password(site, selector);
+bool process(int argc, char * argv[]);
+
+int main(int argc, char * argv[])
+{
+	systemLog.open("/var/log/pw-gen.log", std::ofstream::app);
+	cout	<<"Reading in settings\n";
+	readIn();
+	if (!systemLog)
+	{
+		cout <<"error: could not initialize log file\n";
+		logMessages(-1);
+		return returnCode;
+	}
+	if (process(argc, argv))
+		write();
+	systemLog.close();
+	return returnCode;
+}
 
 bool process(int argc, char * argv[])
 {
@@ -19,9 +37,9 @@ bool process(int argc, char * argv[])
 	int option;
 	selector s;
 	bool generate=false, enough_data=false;
-	while ((option=getopt(argc, argv, "LSRf:i:e:l:u:")) !=-1)
+	while ((option=getopt(argc, argv, "L:S:R:f:i:e:l:u:")) !=-1)
 	{
-		cout <<"option is " <<(char)option;
+		cout <<"option is " <<(char)option <<'\n';
 		if (option == '?')
 		{
 			cout <<"option " <<(char)optopt <<" requires an argument\n";
@@ -31,21 +49,25 @@ bool process(int argc, char * argv[])
 		{
 			case 'L': {
 					s=Long;
+					temp.website=optarg;
 					generate=true;
 				}
 				break;
 			case 'S': {
 					s=Short;
+					temp.website=optarg;
 					generate=true;
 				}
 				break;
 			case 'R': {
 					s=Rand;
+					temp.website=optarg;
 					generate=true;
 				}
 				break;
 			case 'f': {
-					exists(optarg);
+					s=F;
+					temp.website=optarg;
 					enough_data=true;
 				}
 				break;
@@ -64,65 +86,53 @@ bool process(int argc, char * argv[])
 				}
 		}
 	}
-	if (optind <argc)
-		temp.website=argv[optind];
 	if (!enough_data)
 	{
 		cout <<"Not enough data! I need a username or email adress associated with that as well\n";
 		return false;
 	}
+	if (s==F) findAndPrint(temp);
 	else if (generate)
  	{
+	 	if (temp.website.find(".")!=std::string::npos)
+		{
+			temp.website=temp.website.substr(0,temp.website.find(".")-1);
+		}
 		create_password(temp, s);	
 	} 
 	return true;
 }
-
-int main(int argc, char * argv[])
-{
-	systemLog.open("/var/log/pw-gen.log", std::ofstream::app);
-	readIn();
-	if (!systemLog)
-	{
-		cout <<"error: could not initialize log file\n";
-		logMessages(-1);
-		return returnCode;
-	}
-	if (process(argc, argv))
-		write();
-	systemLog.close();
-	return returnCode;
-}
-
 void create_password(site temp, selector flag)
 {
-	if (exists(temp.website))
+	if (temp.uname=="" && temp.email!="") temp.uname=temp.email.substr(0,temp.email.find("@"));
+	cout <<"no username given, taking " <<temp.uname <<" from email\n";
+	if (!record[temp.website][temp.uname].is_null())
 	{
-		int sel;
-		cout <<"A record for that site already exists. please select:\n"
-			  <<"\t1: update the information for that site\n"
-			  <<"\t2: create a new entry for this website\n"
-			  <<"\t3: to quit\n";
+		char sel;
+		cout <<"A record for that username/site combination already exists\n"
+			  <<"would you like to overwrite?(y/n)";
 		cin >>sel;
-		if (sel == 1)
+		cout <<sel <<'\n';
+		switch(sel)
 		{
-					
-		}
-		else
-		{
-			return;		
+			case 'y':
+			case 'Y': copyToSite(&temp);
+				break;
+			case 'n':
+			case 'N':
+				cout <<"Understood. Goodbye\n";
+				return;
+			default: cout <<"Not a valid option. Goodbye\n";
+				return;
 		}
 	}
-	else
+	logMessages(1);
+	switch (flag)
 	{
-		logMessages(1);
-		switch (flag)
-		{
-			case Short: shortpw(temp);
-				break;
-			case Long: longpw(temp);
-				break;
-			case Rand: randpw(temp); 
-		}
+		case Short: shortpw(temp);
+			break;
+		case Long: longpw(temp);
+			break;
+		case Rand: randpw(temp); 
 	}
 }

@@ -25,14 +25,11 @@ install:
 	mandb
 
 update:
-	cp src/algorithms.cpp src/algos
-	cp src/main.cpp src/main
-	cp src/utilities.cpp src/util
-	sed -i -e 's@settings.json@\/usr\/local\/etc\/pw-gen\/settings.json@g' src/utilities.cpp
-	g++ src/main.cpp -o pw-gen -std=c++11 -fpermissive -fmessage-length=50 -w -O3
-	mv src/util src/utilities.cpp
-	mv src/algos src/algorithms.cpp
-	mv src/main src/main.cpp
+	cp src/utilities.cpp src/util.cpp
+	cp src/main.cpp src/m.cpp
+	sed -i -e 's@settings.json@\/usr\/local\/etc\/pw-gen\/settings.json@g' src/util.cpp
+	sed -i -e 's@utilities.cpp@util.cpp@g' src/m.cpp
+	g++ src/m.cpp -o pw-gen -std=c++11 -fpermissive -fmessage-length=50 -w -O3
 	cp src/pw-gen /usr/local/bin
 	touch /var/log/pw-gen.log
 	chmod 7 /var/log/pw-gen.log

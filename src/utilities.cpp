@@ -9,33 +9,60 @@
 #include <fstream>
 #include <string>
 #include <sysexits.h>
-
+#include <cstdio>
+#include <iomanip>
+#include <sstream>
 using namespace std;
 using json= nlohmann::json;
 int returnCode=0;
-bool exists(std::string);
+bool exists(site);
+bool findAndPrint(site);
 bool readIn();
 int convertToNumber(char);
 void Find(std::string);
 void help();
+void print(json::iterator, int);
 void write();
 void logNewEntry(site);
-void print(json::iterator);
-void print(site);
 void logMessages(int);
 void printsettings();
 site copyToSite(std::string);
+std::string formatEntry(site*);
 
 ofstream systemLog;
-bool exists(string toFind)
+bool findAndPrint(site toFind)
 {
-	auto find=record.find(toFind);
-	if (find!= record.end())
+	cout <<"looking for an entry with website " <<toFind.website <<'\n';
+	if  (!record[toFind.website].is_null())
 	{
-		cout <<"from database:\n";
-		Find(toFind);
-		return true;
+		cout <<"From database:";
+		string s(record[toFind.website].dump());
+		std::string tabs="\t";
+		for (int i=0; i < s.size(); ++i)
+		{
+			switch(s[i])
+			{
+				case '{':
+					tabs+='\t';
+					cout <<'\n' <<tabs;
+					break;
+				case '}':
+					tabs.pop_back();
+					//tabs.pop_back();
+					cout <<'\n';
+					break;
+				case ',':
+					cout <<'\n' <<tabs;
+					break;
+				case '\'':
+				case '\"':
+					break;
+				default:
+					cout <<s[i];
+			}
+		}
 	}
+	else cout <<"Couldn't find any accounts associated with the website " <<toFind.website <<'\n';
 	return false;
 }
 
@@ -47,7 +74,7 @@ bool readIn()
 	{
 		in >>settings;
 		in.close();
-		in.open(settings.at("save_file").get<std::string>());
+		in.open(settings["save_file"]);
 		if (in)
 		{
 			in >>record;
@@ -66,31 +93,6 @@ int convertToNumber(char c)
    return num;	
 }
 
-void Find(string a)
-{
-	auto find=record.find(a);
-	if (find != record.end())
-	{
-		print(find);
-	}
-}
-
-void print(json::iterator a)
-{
-	cout <<"data for site \"" <<a.key() <<"\":\n";
-	json j=a.value();
-	for (auto i=j.begin(); i != j.end(); ++i)
-		cout <<'\t' <<i.key() <<':' <<i.value().dump(3) <<'\n';
-}
-
-void print(site s)
-{
-	cout <<"data for site \"" <<s.website <<"\":\n";
-	if (s.email != "") cout <<'\t' <<"email: " <<s.email <<'\n';
-	cout <<'\t' <<"password: " <<s.password <<'\n';
-	if (s.uname != "") cout <<'\t' <<"username:" <<s.uname <<'\n';
-}
-
 
 void help()
 {
@@ -101,6 +103,14 @@ void help()
 		  <<"\t-r: generate a random series of characters. must specify a length as well\n";
 }
 
+void print(json::iterator j, int level)	//FIX This. Iterator wrapper is not a type, its's a function
+{
+	//string tab="\n";
+	//for (int i=0; i < level; ++i) tab+='\t';
+	//cout <<tab <<j <<":";
+	//if ((*j).is_structured()) print(*j, level+1);
+	//else cout <<*j;
+}
 void write()
 {
 	ofstream out;
@@ -112,15 +122,9 @@ void write()
 
 void logNewEntry(site s)
 {
-	json j;
-	j["password"]=s.password;
-	if (s.uname != "")
-		j["username"]=s.uname;
-	if (s.email != "")
-		j["email"]=s.email;
-	if (s.notes != "")
-		j+=json::parse(s.notes);
-	record[s.website]=j;
+	json j=json::parse(formatEntry(&s));
+	record[s.website][s.uname]=j;
+	std::cout <<"Log successful\n";
 }
 
 void logMessages(int code)
@@ -148,7 +152,31 @@ void logMessages(int code)
 	systemLog <<'\n';
 }
 
-site copyToSite(std::string)
+void copyToSite(site * s)
 {
-	
+	char buff[50];
+	if (!record[s->website].is_null())
+	{
+		for (auto i: json::iterator_wrapper(record[s->website]))
+		{
+			if (i.key()=="email") s->email==i.value();
+			if (i.key()=="password") s->password=i.value();
+			else
+			{
+				sprintf(buff,"\"%s\":\"%s\"",i.key(),i.value());
+				s->notes.push_back(string(buff));
+			}
+		}
+	}
+}
+
+std::string formatEntry(site *s)
+{
+	std::string temp="{";
+	temp+="\"passord\":\""+s->password+"\"";
+	if (s->email!="")
+	temp+=",\"email\":\""+s->email+"\"";
+	temp+="}";
+	std::cout <<temp <<'\n';
+	return temp;
 }

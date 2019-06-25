@@ -41,7 +41,6 @@ void longpw(site info)
 	info.password=pw;
 	cout <<info.website <<": " <<info.uname <<'\n' <<pw <<'\n';
 	logNewEntry(info);
-
 }
 
 //generate a normal password
